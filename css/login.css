@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #003366, #0055a5);
+
+}
+.container{
+    width: 470px;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+}
+.container:hover{
+    border-color: #a0c1ff;
+    transform:  scale(1.01);
+}
+.input-login{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-login input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+.input-login input::placeholder{
+    color: #fff;
+
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 30px;
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: #003366;
+
+}
+.login{
+    width: 100%; /* para ocupar todo o espaço que tem fornecido*/
+    height: 50px; /* mesmo tamanho dos input */
+    background-color: #0055a5;
+    border: none;  /*sem borda */
+    border-radius: 15px; /* para arredondar*/
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.logo-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #003C77;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+.logo-center span{
+    color: #a0c1ff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login:hover{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 0.5s;
+}
+/* .cadastrar-link{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.cadastrar-link a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.cadastrar-link a :hover{
+    text-decoration: underline;
+} */
+.voltar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+    color: #003366;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 15px;
+}
+

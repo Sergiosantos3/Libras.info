@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+.alfabeto-container {
+    padding-top: 80px;                   
+    padding-bottom: 40px;
+    min-height: calc(100vh - 56px);
+    text-align: center;
+}
+
+h1 {
+    color: #003366;
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr); /* 4 colunas */
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.letra {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 3px solid #003366;
+}
+
+.letra:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 51, 102, 0.3);
+    border-color: #0055a5;
+}
+
+.letra img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.letra span {
+    font-size: 48px;
+    font-weight: 900;
+    color: #003366;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.botao-voltar {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background: #0055a5;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 85, 165, 0.4);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.botao-voltar:hover {
+    background: #003366;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 51, 102, 0.5);
+    padding-right: 35px;
+}
+
+@media (max-width: 768px) {
+    .botao-voltar {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        border-radius: 30px;
+    }
+}
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 20px;
+    }
+    .letra span { font-size: 40px; }
+    h1 { font-size: 28px; }
+}
+
+@media (max-width: 500px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+    .letra img { max-width: 180px; }
+}
