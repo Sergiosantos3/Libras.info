@@ -13,7 +13,7 @@
         <div class="logo-center">LIBRAS<span>.info</span></div>
         <p class="subtitle">Crie sua conta gratuita e comece a aprender LIBRAS hoje!</p>
 
-        <form>
+        <form id="formCadastro" action="../actions/usuario_cadastrar.php" method="POST">
             <div class="input-cadastro">
                 <input type="text" name="nome" placeholder="Nome completo" required>
             </div>
@@ -21,7 +21,7 @@
                 <input type="email" name="email" placeholder="E-mail" required>
             </div>
             <div class="input-cadastro">
-                <input type="password" name="senha" placeholder="Crie uma senha" required minlength="6">
+                <input type="password" name="senha_hash" placeholder="Crie uma senha" required minlength="6">
             </div>
             <div class="input-cadastro">
                 <input type="password" name="confirmar_senha" placeholder="Confirme a senha" required minlength="6">
@@ -31,7 +31,7 @@
             </div>
 
             <div class="options-nivellibras">
-                <select name="nivel_libras">
+                <select name="nivel_libra">
                     <option value="">Qual seu nível em LIBRAS?</option>
                     <option value="1">Nunca estudei (iniciante)</option>
                     <option value="2">Já sei o básico</option>
