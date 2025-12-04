@@ -24,11 +24,13 @@
             echo "O seu Nivel não foi informado";
         }
         else{
-            if($usuario->Cadastar() == 1){
-                header('Location: ../site-css/login.html');
+            if($usuario->Cadastrar() == true){
+                header('Location: ../html/login.html');
+                
             }
             else{
-                header('Location: ../site-css/cadastrar.html');
+                // header('Location: ../html/login.html');
+                header('Location: ../html/cadastro.html');
             }
         }
     }

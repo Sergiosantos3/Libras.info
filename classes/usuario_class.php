@@ -14,10 +14,10 @@ class Usuario{
     public $ativo;
 
 
-    public function Cadastar(){
+    public function Cadastrar(){
         $sql = "INSERT INTO usuarios (nome, email, senha_hash, data_nascimento, nivel_libra)
         VALUES (?, ?, ?, ?, ?)";
-        $banco = Banco::conectar(); //conectra com o banco de dados.
+        $banco = Banco::conectar(); //conecta com o banco de dados.
         $comando = $banco->prepare($sql);
         $comando->execute([
             $this->nome,
@@ -26,7 +26,8 @@ class Usuario{
             $this->data_nascimento,
             $this->nivel_libra
         ]);
-
+        
+        
     }
 }
 ?>
