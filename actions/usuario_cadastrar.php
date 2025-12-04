@@ -2,6 +2,7 @@
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         require_once('../classes/usuario_class.php');
         $usuario = new Usuario();
+
         $usuario->nome = strip_tags($_POST['nome']);
         $usuario->email = strip_tags($_POST['email']);
         $usuario->senha_hash = strip_tags($_POST['senha_hash']);
@@ -24,9 +25,8 @@
             echo "O seu Nivel não foi informado";
         }
         else{
-            if($usuario->Cadastrar() == true){
+            if($usuario->Cadastrar() == 1){
                 header('Location: ../html/login.html');
-                
             }
             else{
                 // header('Location: ../html/login.html');

@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/db_local.php';
+require_once('banco_class.php');
 
 class Usuario{
     public $id;
@@ -26,7 +26,8 @@ class Usuario{
             $this->data_nascimento,
             $this->nivel_libra
         ]);
-        
+        Banco::desconectar();
+        return $comando->rowCount();
         
     }
 }

@@ -1,15 +1,3 @@
-
-classes/db_local.php
-classes/config_banco.php
-classes/conexao.php
-classes/banco_real.php
-classes/*_local.php
-classes/*.config.php
-
-# Arquivos .env para o futuro
-.env
-.env.local
-
 # Pastas e arquivos desnecessários
 .idea/
 .vscode/
@@ -18,3 +6,4 @@ vendor/
 *.log
 Thumbs.db
 .DS_Store
+config.php
