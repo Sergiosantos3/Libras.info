@@ -34,5 +34,9 @@
             }
         }
     }
+    else{  
+        echo "Essa página deve ser carregada por POST.";
+        
+    }
 
 ?>

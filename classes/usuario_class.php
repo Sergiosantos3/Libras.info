@@ -30,5 +30,18 @@ class Usuario{
         return $comando->rowCount();
         
     }
+
+    public function Logar(){
+        $sql = "SELECT * FROM usuarios WHERE email = ? AND senha_hash = ?";
+        $banco = Banco::conectar(); //conecta com o banco de dados.
+        $comando = $banco->prepare($sql);
+        $comando->execute([
+            $this->email,
+            hash('sha256', $this->senha_hash)
+        ]);
+        $resultado = $comando->fetchAll(PDO::FETCH_ASSOC);
+        Banco::desconectar();
+        return $resultado;
+    }
 }
 ?>
