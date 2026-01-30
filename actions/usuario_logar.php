@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     else{
         $resultado = $usuario->Logar();
         if(sizeof($resultado) != 1){
-            header('Location: ../html/index.html');
+            header('Location: ../index.php');
             exit();
             
         }
@@ -25,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             //criar sessão com os dados vindo do banco de dados
             $_SESSION['usuario'] = $resultado[0];
             //redirecionar para a área padina inicial
-            header('Location: ../html/login.html');
+            header('Location: ../login.php');
             exit();
         }
     }

@@ -13,7 +13,7 @@
         <div class="logo-center">LIBRAS<span>.info</span></div>
         <p class="subtitle">Crie sua conta gratuita e comece a aprender LIBRAS hoje!</p>
 
-        <form id="formCadastro" action="../actions/usuario_cadastrar.php" method="POST">
+        <form id="formCadastro" action="./actions/usuario_cadastrar.php" method="POST">
             <div class="input-cadastro">
                 <input type="text" name="nome" placeholder="Nome completo" required>
             </div>
@@ -42,7 +42,7 @@
         </form>
 
         <div class="login-link">
-            Já tem conta? <a href="login.html" target="_parent">Fazer login</a>
+            Já tem conta? <a href="./login.php" target="_parent">Fazer login</a>
         </div>
 
         <a href="./index.php" class="voltar" target="_parent">← Voltar ao início</a>

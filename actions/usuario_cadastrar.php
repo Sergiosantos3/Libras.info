@@ -26,11 +26,11 @@
         }
         else{
             if($usuario->Cadastrar() == 1){
-                header('Location: ../html/login.html');
+                header('Location: ../login.php');
             }
             else{
                 // header('Location: ../html/login.html');
-                header('Location: ../html/cadastro.html');
+                header('Location: ../cadastro.php');
             }
         }
     }
