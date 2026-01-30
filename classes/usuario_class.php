@@ -7,7 +7,7 @@ class Usuario{
     public $email;
     public $senha_hash;
     public $data_nascimento;
-    public $nivel_libra;
+    public $nivel_libras;
     public $pontos_xp;
     public $data_cadastro;
     public $ultimo_login;
@@ -15,7 +15,7 @@ class Usuario{
 
 
     public function Cadastrar(){
-        $sql = "INSERT INTO usuarios (nome, email, senha_hash, data_cadastro, nivel_libra)
+        $sql = "INSERT INTO usuarios (nome, email, senha_hash, data_cadastro, nivel_libras)
         VALUES (?, ?, ?, ?, ?)";
         $banco = Banco::conectar(); //conecta com o banco de dados.
         $comando = $banco->prepare($sql);
@@ -24,7 +24,7 @@ class Usuario{
             $this->email,
             hash('sha256', $this->senha_hash),
             $this->data_cadastro,
-            $this->nivel_libra
+            $this->nivel_libras
         ]);
         Banco::desconectar();
         return $comando->rowCount();
