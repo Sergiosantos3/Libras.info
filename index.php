@@ -410,14 +410,13 @@
         </div>
     </footer>
     <div class="modal fade" id="modalvideo" tabindex="-1" aria-labelledby="modalvideoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">   <!-- ← aqui está a mágica -->
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="modalvideoLabel">Modal title</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <!-- Seu conteúdo aqui, ex: iframe do YouTube -->
                 <div class="ratio ratio-16x9">
                     <iframe width="1606" height="903" src="https://www.youtube.com/embed/fgrMHDdRHeg?list=PLFdaWy6_jmixvEkG73ZhA2PbkgvMXiGX3" title="1 Hora de Conversação em Língua de Sinais - Libras para Iniciantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
                 </div>
