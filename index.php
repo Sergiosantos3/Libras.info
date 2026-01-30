@@ -39,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                 </ul>
-                <a href="#cursos" class="btn btn-accent">Começar Agora</a>
+                <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
             </div>
         </div>
     </nav>
@@ -183,47 +183,99 @@
                 </p>
             </div>
             
-            <div class="alphabet-grid">
-                <button class="alphabet-letter" data-letter="A" data-emoji="🤚">A</button>
-                <button class="alphabet-letter" data-letter="B" data-emoji="🖐️">B</button>
-                <button class="alphabet-letter" data-letter="C" data-emoji="🤏">C</button>
-                <button class="alphabet-letter" data-letter="D" data-emoji="☝️">D</button>
-                <button class="alphabet-letter" data-letter="E" data-emoji="✊">E</button>
-                <button class="alphabet-letter" data-letter="F" data-emoji="🤌">F</button>
-                <button class="alphabet-letter" data-letter="G" data-emoji="👉">G</button>
-                <button class="alphabet-letter" data-letter="H" data-emoji="🤞">H</button>
-                <button class="alphabet-letter" data-letter="I" data-emoji="🤙">I</button>
-                <button class="alphabet-letter" data-letter="J" data-emoji="🤙">J</button>
-                <button class="alphabet-letter" data-letter="K" data-emoji="✌️">K</button>
-                <button class="alphabet-letter" data-letter="L" data-emoji="🤟">L</button>
-                <button class="alphabet-letter" data-letter="M" data-emoji="✊">M</button>
-                <button class="alphabet-letter" data-letter="N" data-emoji="✊">N</button>
-                <button class="alphabet-letter" data-letter="O" data-emoji="👌">O</button>
-                <button class="alphabet-letter" data-letter="P" data-emoji="👇">P</button>
-                <button class="alphabet-letter" data-letter="Q" data-emoji="👇">Q</button>
-                <button class="alphabet-letter" data-letter="R" data-emoji="🤞">R</button>
-                <button class="alphabet-letter" data-letter="S" data-emoji="✊">S</button>
-                <button class="alphabet-letter" data-letter="T" data-emoji="✊">T</button>
-                <button class="alphabet-letter" data-letter="U" data-emoji="✌️">U</button>
-                <button class="alphabet-letter" data-letter="V" data-emoji="✌️">V</button>
-                <button class="alphabet-letter" data-letter="W" data-emoji="🤟">W</button>
-                <button class="alphabet-letter" data-letter="X" data-emoji="👆">X</button>
-                <button class="alphabet-letter" data-letter="Y" data-emoji="🤙">Y</button>
-                <button class="alphabet-letter" data-letter="Z" data-emoji="☝️">Z</button>
-            </div>
+           <div class="alphabet-grid">
+    <button class="alphabet-letter" data-letter="A">
+        <img src="./img/letra A.png" alt="Letra A em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="B">
+        <img src="./img/letra B.png" alt="Letra B em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="C">
+        <img src="./img/letra C.png" alt="Letra C em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="D">
+        <img src="./img/letra D.png" alt="Letra D em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="E">
+        <img src="./img/letra E.png" alt="Letra E em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="F">
+        <img src="./img/letra F.png" alt="Letra F em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="G">
+        <img src="./img/letra G.png" alt="Letra G em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="H">
+        <img src="./img/letra H.png" alt="Letra H em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="I">
+        <img src="./img/letra I.png" alt="Letra I em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="J">
+        <img src="./img/letra J.png" alt="Letra J em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="K">
+        <img src="./img/letra K.png" alt="Letra K em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="L">
+        <img src="./img/letra L.png" alt="Letra L em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="M">
+        <img src="./img/letra M.png" alt="Letra M em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="N">
+        <img src="./img/letra N.png" alt="Letra N em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="O">
+        <img src="./img/letra O.png" alt="Letra O em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="P">
+        <img src="./img/letra P.png" alt="Letra P em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="Q">
+        <img src="./img/letra Q.png" alt="Letra Q em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="R">
+        <img src="./img/letra R.png" alt="Letra R em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="S">
+        <img src="./img/letra S.png" alt="Letra S em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="T">
+        <img src="./img/letra T.png" alt="Letra T em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="U">
+        <img src="./img/letra U.png" alt="Letra U em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="V">
+        <img src="./img/letra V.png" alt="Letra V em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="W">
+        <img src="./img/letra W.png" alt="Letra W em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="X">
+        <img src="./img/letra X.png" alt="Letra X em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="Y">
+        <img src="./img/letra Y.png" alt="Letra Y em libras" class="letter-img">
+    </button>
+    <button class="alphabet-letter" data-letter="Z">
+        <img src="./img/letra Z.png" alt="Letra Z em libras" class="letter-img">
+    </button>
+</div>
             
             <div id="letterDisplay" class="letter-display d-none">
-                <div class="letter-display-content">
-                    <span id="letterEmoji" class="letter-emoji"></span>
-                    <div class="letter-info">
-                        <span class="letter-label">Letra</span>
-                        <span id="letterText" class="letter-text"></span>
-                    </div>
-                </div>
-            </div>
+    <div class="letter-display-content">
+        <img id="letterImage" class="letter-image" src="" alt="Sinal da letra">
+        <div class="letter-info">
+            <span class="letter-label">Letra</span>
+            <span id="letterText" class="letter-text"></span>
+        </div>
+    </div>
+</div>
             
             <div class="text-center mt-5">
-                <a href="#" class="link-accent">Ver alfabeto completo <i class="bi bi-arrow-right ms-2"></i></a>
+                <a href="./alfabeto.php" class="link-accent">Ver alfabeto completo <i class="bi bi-arrow-right ms-2"></i></a>
             </div>
         </div>
     </section>
@@ -360,18 +412,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // Interação Alfabeto
-        document.querySelectorAll('.alphabet-letter').forEach(button => {
-            button.addEventListener('click', function() {
-                const letter = this.dataset.letter;
-                const emoji = this.dataset.emoji;
-                document.querySelectorAll('.alphabet-letter').forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-                document.getElementById('letterEmoji').textContent = emoji;
-                document.getElementById('letterText').textContent = letter;
-                document.getElementById('letterDisplay').classList.remove('d-none');
-            });
-        });
+       // Pega todos os botões da grade
+const buttons = document.querySelectorAll('.alphabet-letter');
+
+// Pega os elementos que vamos alterar
+const display = document.getElementById('letterDisplay');
+const letterImage = document.getElementById('letterImage');
+const letterText = document.getElementById('letterText');
+
+// Para cada botão...
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const letra = button.dataset.letter;           // "A", "B", "C"...
+        
+        // Define a imagem (ajuste o caminho se necessário)
+        letterImage.src = `./img/letra ${letra}.png`;  // ou `./img/${letra}.png`
+        letterImage.alt = `Sinal da letra ${letra} em LIBRAS`;
+        
+        // Define o texto grande
+        letterText.textContent = letra;
+        
+        // Mostra o display
+        display.classList.remove('d-none');
+    });
+});
+
+// Opcional: clicar fora ou no próprio display para fechar
+display.addEventListener('click', (e) => {
+    if (e.target === display || e.target.closest('.letter-display-content') === null) {
+        display.classList.add('d-none');
+    }
+});
 
         // Navbar scroll Efeito
         window.addEventListener('scroll', function() {

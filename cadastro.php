@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
     <title>Document</title>
 </head>
 
@@ -45,7 +45,7 @@
             Já tem conta? <a href="login.html" target="_parent">Fazer login</a>
         </div>
 
-        <a href="conteudo.html" class="voltar" target="_parent">← Voltar ao início</a>
+        <a href="./index.php" class="voltar" target="_parent">← Voltar ao início</a>
     </div>
     </main>
 </body>
