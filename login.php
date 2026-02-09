@@ -9,7 +9,7 @@
 <body>
 
     <main class="container">
-        <form id="formLogin" action="./index.php" method="POST">
+        <form id="formLogin" action="actions/usuario_logar.php" method="POST">
             <a href="#" class="logo-center" target="iframe_conteudo">LIBRAS<span> .info</span></a>
 
             <div class="input-login">

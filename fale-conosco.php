@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco - Libras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="./css/sectioncategorias.css">
+    <link rel="stylesheet" href="./css/sectioncategorias.css">
 </head>
+
 <body>
     <a href="./index.php" class="btn btn-back" style="background-color: var(--pink); color: white;">
         <i class="bi bi-arrow-left me-2"></i>Voltar
@@ -29,25 +31,25 @@
                     <h3 class="text-pink fw-bold mb-4">
                         <i class="bi bi-chat-left-text-fill me-2"></i>Envie sua Mensagem
                     </h3>
-                    
+
                     <form id="contactForm">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="nome" class="form-label fw-semibold">Nome Completo *</label>
-                                <input type="text" class="form-control" id="nome" required 
-                                       placeholder="Seu nome completo">
+                                <input type="text" class="form-control" id="nome" required
+                                    placeholder="Seu nome completo">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="email" class="form-label fw-semibold">E-mail *</label>
-                                <input type="email" class="form-control" id="email" required 
-                                       placeholder="seu@email.com">
+                                <input type="email" class="form-control" id="email" required
+                                    placeholder="seu@email.com">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="telefone" class="form-label fw-semibold">Telefone</label>
-                                <input type="tel" class="form-control" id="telefone" 
-                                       placeholder="(00) 00000-0000">
+                                <input type="tel" class="form-control" id="telefone"
+                                    placeholder="(00) 00000-0000">
                             </div>
 
                             <div class="col-md-6">
@@ -66,14 +68,14 @@
                             <div class="col-12">
                                 <label for="mensagem" class="form-label fw-semibold">Mensagem *</label>
                                 <textarea class="form-control" id="mensagem" rows="6" required
-                                          placeholder="Digite sua mensagem aqui..."></textarea>
+                                    placeholder="Digite sua mensagem aqui..."></textarea>
                             </div>
 
                             <div class="col-12">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="aceiteTermos" required>
                                     <label class="form-check-label" for="aceiteTermos">
-                                        Concordo com a <a href="#" class="text-pink">Política de Privacidade</a> e 
+                                        Concordo com a <a href="#" class="text-pink">Política de Privacidade</a> e
                                         autorizo o uso dos meus dados para resposta. *
                                     </label>
                                 </div>
@@ -105,7 +107,7 @@
                         <h5 class="card-title text-pink fw-bold mb-4">
                             <i class="bi bi-info-circle-fill me-2"></i>Informações de Contato
                         </h5>
-                        
+
                         <div class="d-flex align-items-start mb-3">
                             <i class="bi bi-envelope-fill text-pink fs-5 me-3"></i>
                             <div>
@@ -156,17 +158,17 @@
                         <h5 class="card-title text-pink fw-bold mb-4">
                             <i class="bi bi-clock-fill me-2"></i>Horário de Atendimento
                         </h5>
-                        
+
                         <div class="mb-2">
                             <strong>Segunda a Sexta:</strong><br>
                             8h às 12h | 13h às 18h
                         </div>
-                        
+
                         <div class="mb-2">
                             <strong>Sábado:</strong><br>
                             9h às 13h
                         </div>
-                        
+
                         <div>
                             <strong>Domingo:</strong><br>
                             Fechado
@@ -186,7 +188,7 @@
                         <h5 class="card-title fw-bold mb-3">
                             <i class="bi bi-share-fill me-2"></i>Redes Sociais
                         </h5>
-                        
+
                         <div class="d-flex gap-3 mb-3">
                             <a href="#" class="btn btn-light btn-sm" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;">
                                 <i class="bi bi-facebook text-pink fs-5"></i>
@@ -201,7 +203,7 @@
                                 <i class="bi bi-tiktok text-pink fs-5"></i>
                             </a>
                         </div>
-                        
+
                         <p class="mb-0 small">
                             Siga-nos nas redes sociais para conteúdo diário sobre Libras!
                         </p>
@@ -212,7 +214,7 @@
 
         <div class="info-section mt-5">
             <h2><i class="bi bi-question-circle-fill text-pink me-2"></i>Perguntas Frequentes</h2>
-            
+
             <div class="accordion" id="faqAccordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -222,8 +224,8 @@
                     </h2>
                     <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Você pode começar pelos nossos vídeos educativos disponíveis na seção "Vídeos". 
-                            Recomendamos também cursos presenciais ou online com professores surdos certificados. 
+                            Você pode começar pelos nossos vídeos educativos disponíveis na seção "Vídeos".
+                            Recomendamos também cursos presenciais ou online com professores surdos certificados.
                             Entre em contato conosco para indicações de cursos na sua região.
                         </div>
                     </div>
@@ -237,8 +239,8 @@
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            O tempo varia de pessoa para pessoa. Para conversação básica, geralmente 6 meses 
-                            de estudo regular são suficientes. Para fluência intermediária, conte com 1 a 2 anos 
+                            O tempo varia de pessoa para pessoa. Para conversação básica, geralmente 6 meses
+                            de estudo regular são suficientes. Para fluência intermediária, conte com 1 a 2 anos
                             de prática constante. A imersão com a comunidade surda acelera muito o aprendizado.
                         </div>
                     </div>
@@ -252,8 +254,8 @@
                     </h2>
                     <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Atualmente, somos uma plataforma educativa. Para certificados oficiais, recomendamos 
-                            cursos reconhecidos pelo MEC ou pelo PROLIBRAS (Exame Nacional de Proficiência em Libras). 
+                            Atualmente, somos uma plataforma educativa. Para certificados oficiais, recomendamos
+                            cursos reconhecidos pelo MEC ou pelo PROLIBRAS (Exame Nacional de Proficiência em Libras).
                             Entre em contato para informações sobre instituições certificadoras.
                         </div>
                     </div>
@@ -267,8 +269,8 @@
                     </h2>
                     <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Adoraríamos contar com sua contribuição! Você pode: compartilhar nosso conteúdo, 
-                            sugerir melhorias, enviar materiais educativos, ou entrar em contato para discutir 
+                            Adoraríamos contar com sua contribuição! Você pode: compartilhar nosso conteúdo,
+                            sugerir melhorias, enviar materiais educativos, ou entrar em contato para discutir
                             parcerias. Toda ajuda é bem-vinda para difundir o conhecimento sobre Libras.
                         </div>
                     </div>
@@ -282,8 +284,8 @@
                     </h2>
                     <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Sim! Todo nosso conteúdo pode ser usado para fins educacionais não comerciais. 
-                            Pedimos apenas que cite a fonte. Para uso comercial ou em grande escala, 
+                            Sim! Todo nosso conteúdo pode ser usado para fins educacionais não comerciais.
+                            Pedimos apenas que cite a fonte. Para uso comercial ou em grande escala,
                             entre em contato conosco para obter autorização.
                         </div>
                     </div>
@@ -329,24 +331,38 @@
             </div>
         </div>
     </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Simulação de envio de formulário
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             // Validação básica
             if (this.checkValidity()) {
                 // Mostrar mensagem de sucesso
                 document.getElementById('successMessage').classList.remove('d-none');
-                
+
                 // Limpar formulário
                 this.reset();
-                
+
                 // Scroll para mensagem de sucesso
-                document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
-                
+                document.getElementById('successMessage').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+
                 // Esconder mensagem após 5 segundos
                 setTimeout(function() {
                     document.getElementById('successMessage').classList.add('d-none');
@@ -355,4 +371,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -7,7 +7,7 @@
         $usuario->email = strip_tags($_POST['email']);
         $usuario->senha_hash = strip_tags($_POST['senha_hash']);
         $usuario->data_nascimento = strip_tags($_POST['data_nascimento']);
-        $usuario->nivel_libra = strip_tags($_POST['nivel_libra']);
+        $usuario->nivel_libras = strip_tags($_POST['nivel_libra']);
 
         if(empty($usuario->nome)){
             echo "O nome não foi informado";

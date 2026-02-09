@@ -1,5 +1,10 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 
 <head>
     <meta charset="UTF-8">
@@ -41,7 +46,27 @@
                     <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                 </ul>
-                <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
+                <?php
+                if (isset($_SESSION['usuario'])) {
+                ?>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary" style="background: transparent; color: hsla(0, 0%, 100%, 0.8);" type="button" id="dropdownMenu2" data-bs-toggle="dropdown">
+                            Home
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Configurações</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="./admin/sair.php">Sair</a></li>
+                        </ul>
+                    </div>
+                <?php
+                } else {
+                ?>
+                    <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
+                <?php
+                }
+                ?>
             </div>
         </div>
     </nav>
@@ -87,6 +112,7 @@
                             <div class="floating-card card-1">🤚 A</div>
                             <div class="floating-card card-2">🖐️ B</div>
                             <div class="floating-card card-3">✌️ K</div>
+                            <div class="floating-card-meio card-4">🤟</div>
                         </div>
                     </div>
                 </div>
@@ -375,16 +401,16 @@
                 <div class="col-6 col-md-4 col-lg-2">
                     <h5 class="footer-title">Aprender</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Alfabeto</a></li>
-                        <li><a href="#">Números</a></li>
-                        <li><a href="#">Cumprimentos</a></li>
-                        <li><a href="#">Família</a></li>
+                        <li><a href="./alfabeto.php">Alfabeto</a></li>
+                        <li><a href="./numeros.php">Números</a></li>
+                        <li><a href="./cumprimentos.php">Cumprimentos</a></li>
+                        <li><a href="./familia.php">Família</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <h5 class="footer-title">Recursos</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Vídeos</a></li>
+                        <li><a href="./videos.php">Vídeos</a></li>
                         <li><a href="#">Cursos</a></li>
                         <li><a href="#">Dicionário</a></li>
                         <li><a href="#">Blog</a></li>
@@ -394,9 +420,9 @@
                     <h5 class="footer-title">Institucional</h5>
                     <ul class="footer-links">
                         <li><a href="#">Sobre Nós</a></li>
-                        <li><a href="#">Legislação</a></li>
+                        <li><a href="./legislacao.php">Legislação</a></li>
                         <li><a href="#">Parceiros</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="./fale-conosco.php">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -410,24 +436,33 @@
         </div>
     </footer>
     <div class="modal fade" id="modalvideo" tabindex="-1" aria-labelledby="modalvideoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modalvideoLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="ratio ratio-16x9">
-                    <iframe width="1606" height="903" src="https://www.youtube.com/embed/fgrMHDdRHeg?list=PLFdaWy6_jmixvEkG73ZhA2PbkgvMXiGX3" title="1 Hora de Conversação em Língua de Sinais - Libras para Iniciantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalvideoLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> → pode remover se não precisar -->
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="1606" height="903" src="https://www.youtube.com/embed/fgrMHDdRHeg?list=PLFdaWy6_jmixvEkG73ZhA2PbkgvMXiGX3" title="1 Hora de Conversação em Língua de Sinais - Libras para Iniciantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
         </div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </div>
-</div>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -458,7 +493,6 @@
             });
         });
 
-        // Opcional: clicar fora ou no próprio display para fechar
         display.addEventListener('click', (e) => {
             if (e.target === display || e.target.closest('.letter-display-content') === null) {
                 display.classList.add('d-none');

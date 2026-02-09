@@ -44,6 +44,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">FAMÍLIA</h5>
                         <p class="card-text text-muted">
+                            <img src="./img/img.familia/familia.JPG" alt="Familia">
                             Mãos em formato de "F" movendo em círculo, representando união e grupo familiar.
                         </p>
                         <span class="badge bg-warning text-dark">Geral</span>
@@ -59,6 +60,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">PAI</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/pai.JPG" alt="Pai">
                             Mão aberta tocando a testa, movimento que representa autoridade e proteção.
                         </p>
                         <span class="badge bg-primary">Masculino</span>
@@ -74,6 +76,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">MÃE</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/mae.JPG" alt="Mãe">
                             Mão aberta tocando o queixo, representando carinho e cuidado maternal.
                         </p>
                         <span class="badge bg-danger">Feminino</span>
@@ -89,6 +92,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">FILHO</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/filho.JPG" alt="Filho">
                             Combinação do sinal de "homem" + movimento indicando descendência ou mais jovem.
                         </p>
                         <span class="badge bg-primary">Masculino</span>
@@ -104,6 +108,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">FILHA</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/filha.JPG" alt="Filha">
                             Combinação do sinal de "mulher" + movimento indicando descendência ou mais jovem.
                         </p>
                         <span class="badge bg-danger">Feminino</span>
@@ -119,6 +124,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">BEBÊ</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/bebe.JPG" alt="Bebê">
                             Braços cruzados fazendo movimento de embalar um bebê, universal e expressivo.
                         </p>
                         <span class="badge bg-info">Neutro</span>
@@ -140,6 +146,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">IRMÃO</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/irmao.JPG" alt="Irmão">
                             Sinal de "homem" + indicação de igualdade/mesmo nível, mostrando relação fraterna.
                         </p>
                         <span class="badge bg-primary">Masculino</span>
@@ -155,6 +162,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">IRMÃ</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/irma.JPG" alt="Irmã">
                             Sinal de "mulher" + indicação de igualdade/mesmo nível, mostrando relação fraterna.
                         </p>
                         <span class="badge bg-danger">Feminino</span>
@@ -170,6 +178,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">MARIDO</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/Marido.JPG" alt="Marido">
                             Sinal de "homem" + sinal de "casamento" ou união conjugal.
                         </p>
                         <span class="badge bg-primary">Masculino</span>
@@ -185,6 +194,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">ESPOSA</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/esposa.JPG" alt="Esposa">
                             Sinal de "mulher" + sinal de "casamento" ou união conjugal.
                         </p>
                         <span class="badge bg-danger">Feminino</span>
@@ -200,6 +210,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">CASADO(A)</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/cadaso.JPG" alt="Casado(a)">
                             Dedos entrelaçados ou movimento de colocar anel, simbolizando união matrimonial.
                         </p>
                         <span class="badge bg-success">Estado civil</span>
@@ -215,6 +226,7 @@
                         </div>
                         <h5 class="card-title text-warning fw-bold">SOLTEIRO(A)</h5>
                         <p class="card-text text-muted">
+                             <img src="./img/img.familia/solteiro.JPG" alt="Solteiro">
                             Sinal específico indicando estado civil sem compromisso conjugal.
                         </p>
                         <span class="badge bg-secondary">Estado civil</span>
@@ -233,7 +245,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">AVÔ</h6>
-                        <p class="card-text text-muted small">Pai do pai/mãe</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/avo.JPG" alt="Avô">Pai do pai/mãe</p>
                         <span class="badge bg-primary badge-sm">Masculino</span>
                     </div>
                 </div>
@@ -244,7 +257,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">AVÓ</h6>
-                        <p class="card-text text-muted small">Mãe do pai/mãe</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/avó.JPG" alt="Avó">Mãe do pai/mãe</p>
                         <span class="badge bg-danger badge-sm">Feminino</span>
                     </div>
                 </div>
@@ -255,7 +269,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">TIO</h6>
-                        <p class="card-text text-muted small">Irmão do pai/mãe</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/tio.JPG" alt="Tio">Irmão do pai/mãe</p>
                         <span class="badge bg-primary badge-sm">Masculino</span>
                     </div>
                 </div>
@@ -266,7 +281,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">TIA</h6>
-                        <p class="card-text text-muted small">Irmã do pai/mãe</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/tia.JPG" alt="Tia">Irmã do pai/mãe</p>
                         <span class="badge bg-danger badge-sm">Feminino</span>
                     </div>
                 </div>
@@ -277,7 +293,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">PRIMO</h6>
-                        <p class="card-text text-muted small">Filho do tio/tia</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/primo.JPG" alt="Primo">Filho do tio/tia</p>
                         <span class="badge bg-primary badge-sm">Masculino</span>
                     </div>
                 </div>
@@ -288,7 +305,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">PRIMA</h6>
-                        <p class="card-text text-muted small">Filha do tio/tia</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/Prima.JPG" alt="Prima">Filha do tio/tia</p>
                         <span class="badge bg-danger badge-sm">Feminino</span>
                     </div>
                 </div>
@@ -299,7 +317,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">NETO</h6>
-                        <p class="card-text text-muted small">Filho do filho/filha</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/neto.JPG" alt="Neto">Filho do filho/filha</p>
                         <span class="badge bg-primary badge-sm">Masculino</span>
                     </div>
                 </div>
@@ -310,7 +329,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">NETA</h6>
-                        <p class="card-text text-muted small">Filha do filho/filha</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/neta.JPG" alt="Neta">Filha do filho/filha</p>
                         <span class="badge bg-danger badge-sm">Feminino</span>
                     </div>
                 </div>
@@ -321,7 +341,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">SOGRO</h6>
-                        <p class="card-text text-muted small">Pai do cônjuge</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/sogro.JPG" alt="Sogro">Pai do cônjuge</p>
                         <span class="badge bg-primary badge-sm">Masculino</span>
                     </div>
                 </div>
@@ -332,7 +353,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">SOGRA</h6>
-                        <p class="card-text text-muted small">Mãe do cônjuge</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/sogra.JPG" alt="Sogra">Mãe do cônjuge</p>
                         <span class="badge bg-danger badge-sm">Feminino</span>
                     </div>
                 </div>
@@ -343,7 +365,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">CUNHADO</h6>
-                        <p class="card-text text-muted small">Irmão do cônjuge</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/cunhado.JPG" alt="Cunhado">Irmão do cônjuge</p>
                         <span class="badge bg-primary badge-sm">Masculino</span>
                     </div>
                 </div>
@@ -354,7 +377,8 @@
                     <div class="card-body text-center">
                         <div style="font-size: 3rem;" class="mb-3"></div>
                         <h6 class="fw-bold text-warning">CUNHADA</h6>
-                        <p class="card-text text-muted small">Irmã do cônjuge</p>
+                        <p class="card-text text-muted small">
+                             <img src="./img/img.familia/cunhada.JPG" alt="Cunhada">Irmã do cônjuge</p>
                         <span class="badge bg-danger badge-sm">Feminino</span>
                     </div>
                 </div>
@@ -523,6 +547,17 @@
             características físicas ou de personalidade.
         </div>
     </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
