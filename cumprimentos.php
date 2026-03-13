@@ -212,7 +212,7 @@
                     <div class="card-body">
                         <h5>DE NADA</h5>
                         <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
-                            <iframe src="https://www.youtube.com/embed/OzvTsfMl4oQ" title="DE NADA em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/lJb5HMZdOz8" title="DE NADA em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <span class="badge-positivo">Cortesia</span>
                     </div>

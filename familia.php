@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/familia.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
@@ -56,263 +58,248 @@
             <div class="separador-secao-linha"></div>
         </div>
         <div class="row g-4">
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/familia.JPG" alt="FAMÍLIA em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/519RfKp6V7A" title="FAMÍLIA em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>FAMÍLIA</h5>
-                        <p>Mãos em formato de "F" movendo em círculo, representando união e grupo familiar.</p>
                         <span class="badge-geral">Geral</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/pai.JPG" alt="PAI em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/U4nK2YtvLp4" title="PAI em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>PAI</h5>
-                        <p>Mão aberta tocando a testa, movimento que representa autoridade e proteção.</p>
                         <span class="badge-masculino">Masculino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/mae.JPG" alt="MÃE em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/BW81XxYEjyQ" title="MÃE em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>MÃE</h5>
-                        <p>Mão aberta tocando o queixo, representando carinho e cuidado maternal.</p>
                         <span class="badge-feminino">Feminino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/filho.JPG" alt="FILHO em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/BW81XxYEjyQ" title="FILHO em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>FILHO</h5>
-                        <p>Combinação do sinal de "homem" + movimento indicando descendência.</p>
                         <span class="badge-masculino">Masculino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/filha.JPG" alt="FILHA em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 100%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/OjZBYFl0-CU" title="FILHA em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>FILHA</h5>
-                        <p>Combinação do sinal de "mulher" + movimento indicando descendência.</p>
                         <span class="badge-feminino">Feminino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/bebe.JPG" alt="BEBÊ em Libras">
-                        <h5>BEBÊ</h5>
-                        <p>Braços cruzados fazendo movimento de embalar um bebê.</p>
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/rOCRob03b74" title="CRIANÇA em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h5>Criança</h5>
                         <span class="badge-neutro">Neutro</span>
                     </div>
                 </div>
             </div>
-                    </div>
+        </div>
 
-        <!-- Irmãos e Relacionamentos -->
+        <!-- IRMÃOS E RELACIONAMENTOS -->
         <div class="separador-secao">
             <span class="separador-secao-texto"><i class="bi bi-people"></i> Irmãos e Relacionamentos</span>
             <div class="separador-secao-linha"></div>
         </div>
         <div class="row g-4">
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/irmao.JPG" alt="IRMÃO em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/QpJ2hAeBLGU" title="IRMÃO em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>IRMÃO</h5>
-                        <p>Sinal de "homem" + indicação de igualdade/mesmo nível.</p>
-                        <span class="badge-masculino">Masculino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/irma.JPG" alt="IRMÃ em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 100%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/-IwV8txXwKM" title="IRMÃ em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>IRMÃ</h5>
-                        <p>Sinal de "mulher" + indicação de igualdade/mesmo nível.</p>
                         <span class="badge-feminino">Feminino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/Marido.JPG" alt="MARIDO em Libras">
-                        <h5>MARIDO</h5>
-                        <p>Sinal de "homem" + sinal de "casamento" ou união conjugal.</p>
-                        <span class="badge-masculino">Masculino</span>
+                        <div class="ratio" style="--bs-aspect-ratio: 100%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/G1YGlnQAjJ8" title="ESPOSO em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h5>ESPOSO</h5>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/esposa.JPG" alt="ESPOSA em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 100%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/aPM8NA4yjGE" title="ESPOSA em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>ESPOSA</h5>
-                        <p>Sinal de "mulher" + sinal de "casamento" ou união conjugal.</p>
                         <span class="badge-feminino">Feminino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/cadaso.JPG" alt="CASADO(A) em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/v13kTeMPKuc" title="CASADO em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>CASADO(A)</h5>
-                        <p>Dedos entrelaçados ou movimento de colocar anel, simbolizando união.</p>
                         <span class="badge-geral">Estado civil</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="conteudo-card">
                     <div class="card-body">
-                        <img src="./img/img.familia/solteiro.JPG" alt="SOLTEIRO(A) em Libras">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/TQR5FgawPRQ" title="SOLTEIRO em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5>SOLTEIRO(A)</h5>
-                        <p>Sinal específico indicando estado civil sem compromisso conjugal.</p>
-                        <span class="badge-neutro">Estado civil</span>
+                        <span class="badge-neutro" style="font-size:.68rem;">Neutro</span>
                     </div>
                 </div>
             </div>
-                    </div>
+        </div>
 
-        <!-- Família Estendida -->
+        <!-- ── FAMÍLIA ESTENDIDA ───────────────────────────────────── -->
         <div class="separador-secao">
             <span class="separador-secao-texto"><i class="bi bi-tree-fill"></i> Família Estendida</span>
             <div class="separador-secao-linha"></div>
         </div>
         <div class="row g-3">
-                        <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="conteudo-card" style="text-align:center;">
                     <div class="card-body">
-                        <img src="./img/img.familia/avo.JPG" alt="AVÔ" style="max-height:120px;">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/LkPgrPQOPtM" title="AVÔ em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5 style="font-size:.88rem;margin-bottom:2px;">AVÔ</h5>
-                        <p style="font-size:.77rem;margin-bottom:8px;">Pai do pai/mãe</p>
                         <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="conteudo-card" style="text-align:center;">
                     <div class="card-body">
-                        <img src="./img/img.familia/avó.JPG" alt="AVÓ" style="max-height:120px;">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/a7ctD2sIQ5M" title="AVÓ em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5 style="font-size:.88rem;margin-bottom:2px;">AVÓ</h5>
                         <p style="font-size:.77rem;margin-bottom:8px;">Mãe do pai/mãe</p>
                         <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="conteudo-card" style="text-align:center;">
                     <div class="card-body">
-                        <img src="./img/img.familia/tio.JPG" alt="TIO" style="max-height:120px;">
+                        <div class="ratio" style="--bs-aspect-ratio: 56.25%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/InihCfxTmZo" title="TIO em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5 style="font-size:.88rem;margin-bottom:2px;">TIO</h5>
                         <p style="font-size:.77rem;margin-bottom:8px;">Irmão do pai/mãe</p>
                         <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="conteudo-card" style="text-align:center;">
                     <div class="card-body">
-                        <img src="./img/img.familia/tia.JPG" alt="TIA" style="max-height:120px;">
+                        <div class="ratio" style="--bs-aspect-ratio: 56.25%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/sAEhJO_r_gs" title="TIA em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5 style="font-size:.88rem;margin-bottom:2px;">TIA</h5>
                         <p style="font-size:.77rem;margin-bottom:8px;">Irmã do pai/mãe</p>
                         <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="conteudo-card" style="text-align:center;">
                     <div class="card-body">
-                        <img src="./img/img.familia/primo.JPG" alt="PRIMO" style="max-height:120px;">
+                        <div class="ratio" style="--bs-aspect-ratio: 100%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/MEi8a4b2Soo" title="PRIMO em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5 style="font-size:.88rem;margin-bottom:2px;">PRIMO</h5>
                         <p style="font-size:.77rem;margin-bottom:8px;">Filho do tio/tia</p>
                         <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="conteudo-card" style="text-align:center;">
                     <div class="card-body">
-                        <img src="./img/img.familia/Prima.JPG" alt="PRIMA" style="max-height:120px;">
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/QPstS8FVfA4" title="PRIMA em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h5 style="font-size:.88rem;margin-bottom:2px;">PRIMA</h5>
                         <p style="font-size:.77rem;margin-bottom:8px;">Filha do tio/tia</p>
                         <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="conteudo-card" style="text-align:center;">
                     <div class="card-body">
-                        <img src="./img/img.familia/neto.JPG" alt="NETO" style="max-height:120px;">
-                        <h5 style="font-size:.88rem;margin-bottom:2px;">NETO</h5>
-                        <p style="font-size:.77rem;margin-bottom:8px;">Filho do filho/filha</p>
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/8WChjExfnOg" title="Sinal de Libras em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">Sinal de Libras</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Libras</p>
                         <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="conteudo-card" style="text-align:center;">
                     <div class="card-body">
-                        <img src="./img/img.familia/neta.JPG" alt="NETA" style="max-height:120px;">
-                        <h5 style="font-size:.88rem;margin-bottom:2px;">NETA</h5>
-                        <p style="font-size:.77rem;margin-bottom:8px;">Filha do filho/filha</p>
-                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
+                        <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                            <iframe src="https://www.youtube.com/embed/5nbOBOtgT18" title="Meu sinal em Libras" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">Meu sinal</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Sinal</p>
+                        <span class="badge-feminino" style="font-size:.68rem;">Neutro</span>
                     </div>
                 </div>
             </div>
-                        <div class="col-6 col-md-4 col-lg-3">
-                <div class="conteudo-card" style="text-align:center;">
-                    <div class="card-body">
-                        <img src="./img/img.familia/sogro.JPG" alt="SOGRO" style="max-height:120px;">
-                        <h5 style="font-size:.88rem;margin-bottom:2px;">SOGRO</h5>
-                        <p style="font-size:.77rem;margin-bottom:8px;">Pai do cônjuge</p>
-                        <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-6 col-md-4 col-lg-3">
-                <div class="conteudo-card" style="text-align:center;">
-                    <div class="card-body">
-                        <img src="./img/img.familia/sogra.JPG" alt="SOGRA" style="max-height:120px;">
-                        <h5 style="font-size:.88rem;margin-bottom:2px;">SOGRA</h5>
-                        <p style="font-size:.77rem;margin-bottom:8px;">Mãe do cônjuge</p>
-                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-6 col-md-4 col-lg-3">
-                <div class="conteudo-card" style="text-align:center;">
-                    <div class="card-body">
-                        <img src="./img/img.familia/cunhado.JPG" alt="CUNHADO" style="max-height:120px;">
-                        <h5 style="font-size:.88rem;margin-bottom:2px;">CUNHADO</h5>
-                        <p style="font-size:.77rem;margin-bottom:8px;">Irmão do cônjuge</p>
-                        <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-6 col-md-4 col-lg-3">
-                <div class="conteudo-card" style="text-align:center;">
-                    <div class="card-body">
-                        <img src="./img/img.familia/cunhada.JPG" alt="CUNHADA" style="max-height:120px;">
-                        <h5 style="font-size:.88rem;margin-bottom:2px;">CUNHADA</h5>
-                        <p style="font-size:.77rem;margin-bottom:8px;">Irmã do cônjuge</p>
-                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
-                    </div>
-                </div>
-            </div>
-                    </div>
+        </div>
 
         <!-- Frases úteis -->
         <div class="separador-secao">
@@ -325,15 +312,36 @@
                 <div class="table-responsive">
                     <table class="tabela-escura">
                         <thead>
-                            <tr><th>Português</th><th>Uso em Contexto</th></tr>
+                            <tr>
+                                <th>Português</th>
+                                <th>Uso em Contexto</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td><strong>Esta é minha família</strong></td><td>Apresentando membros da família</td></tr>
-                            <tr><td><strong>Tenho dois irmãos</strong></td><td>Falando sobre irmãos</td></tr>
-                            <tr><td><strong>Minha mãe é surda</strong></td><td>Informando características familiares</td></tr>
-                            <tr><td><strong>Meu pai trabalha como…</strong></td><td>Descrevendo profissão dos pais</td></tr>
-                            <tr><td><strong>Você tem filhos?</strong></td><td>Perguntando sobre descendentes</td></tr>
-                            <tr><td><strong>Sou casado(a)</strong></td><td>Informando estado civil</td></tr>
+                            <tr>
+                                <td><strong>Esta é minha família</strong></td>
+                                <td>Apresentando membros da família</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tenho dois irmãos</strong></td>
+                                <td>Falando sobre irmãos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Minha mãe é surda</strong></td>
+                                <td>Informando características familiares</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Meu pai trabalha como…</strong></td>
+                                <td>Descrevendo profissão dos pais</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Você tem filhos?</strong></td>
+                                <td>Perguntando sobre descendentes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sou casado(a)</strong></td>
+                                <td>Informando estado civil</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -346,22 +354,38 @@
             <div class="separador-secao-linha"></div>
         </div>
         <div class="row g-4">
-            <div class="col-md-6"><div class="card-escuro"><div class="card-body">
-                <h5><i class="bi bi-gender-ambiguous text-info me-2"></i>Gênero nos Sinais</h5>
-                <p>Sinais masculinos geralmente são feitos na parte superior do rosto (testa) e femininos na parte inferior (queixo/boca).</p>
-            </div></div></div>
-            <div class="col-md-6"><div class="card-escuro"><div class="card-body">
-                <h5><i class="bi bi-arrow-left-right text-info me-2"></i>Variações Regionais</h5>
-                <p>Alguns sinais de família podem variar entre regiões do Brasil. Os apresentados aqui são os mais comuns e reconhecidos.</p>
-            </div></div></div>
-            <div class="col-md-6"><div class="card-escuro"><div class="card-body">
-                <h5><i class="bi bi-people-fill text-info me-2"></i>Família Moderna</h5>
-                <p>A comunidade surda reconhece diversos modelos familiares. Use os sinais de forma inclusiva para representar todas as configurações.</p>
-            </div></div></div>
-            <div class="col-md-6"><div class="card-escuro"><div class="card-body">
-                <h5><i class="bi bi-heart-fill text-info me-2"></i>Contexto Cultural</h5>
-                <p>Na cultura surda, "família" pode incluir amigos próximos e a comunidade surda, que muitas vezes funciona como uma segunda família.</p>
-            </div></div></div>
+            <div class="col-md-6">
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-gender-ambiguous text-info me-2"></i>Gênero nos Sinais</h5>
+                        <p>Sinais masculinos geralmente são feitos na parte superior do rosto (testa) e femininos na parte inferior (queixo/boca).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-arrow-left-right text-info me-2"></i>Variações Regionais</h5>
+                        <p>Alguns sinais de família podem variar entre regiões do Brasil. Os apresentados aqui são os mais comuns e reconhecidos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-people-fill text-info me-2"></i>Família Moderna</h5>
+                        <p>A comunidade surda reconhece diversos modelos familiares. Use os sinais de forma inclusiva para representar todas as configurações.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-heart-fill text-info me-2"></i>Contexto Cultural</h5>
+                        <p>Na cultura surda, "família" pode incluir amigos próximos e a comunidade surda, que muitas vezes funciona como uma segunda família.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="alerta-aviso mt-4">
@@ -421,10 +445,22 @@
             </div>
         </div>
     </footer>
-    <div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>window.addEventListener('scroll',()=>{document.querySelector('.custom-navbar').classList.toggle('rolando',window.scrollY>50);});</script>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.custom-navbar').classList.toggle('rolando', window.scrollY > 50);
+        });
+    </script>
 </body>
+
 </html>

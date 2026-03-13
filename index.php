@@ -77,7 +77,7 @@ session_start();
                         <a href="#cursos" class="btn btn-accent btn-lg">
                             <i class="bi bi-play-fill me-2"></i>Começar Agora
                         </a>
-                        <a href="#sobre" class="btn btn-outline-light btn-lg">Saiba Mais</a>
+                        <a href="sobre-nos.php" class="btn btn-outline-light btn-lg">Saiba Mais</a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item">
@@ -178,7 +178,7 @@ session_start();
                     </a>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <a href="./fale_conosco.php" class="category-card">
+                    <a href="./fale-conosco.php" class="category-card">
                         <div class="category-icon bg-pink"><i class="bi bi-envelope"></i></div>
                         <h3 class="category-title">Fale Conosco</h3>
                         <p class="category-description">Entre em contato com nossa equipe</p>
