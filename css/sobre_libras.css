@@ -1,4 +1,4 @@
-/* VARIÁVEIS */
+/* ─── VARIÁVEIS ─── */
 :root {
     --destaque: #00c8ff;
     --destaque-2: #0ea5e9;
@@ -11,7 +11,7 @@
     --branco: #e2e8f0;
 }
 
-/* RESET */
+/* ─── RESET ─── */
 *,
 *::before,
 *::after {
@@ -20,7 +20,7 @@
     padding: 0;
 }
 
-/* CORPO */
+/* ─── CORPO ─── */
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--fundo);
@@ -262,7 +262,9 @@ body {
     color: var(--destaque);
 }
 
-/* CARD GENÉRICO ESCURO */
+/* 
+   CARD GENÉRICO ESCURO
+    */
 .card-escuro {
     background: var(--card-fundo);
     border: 1px solid var(--borda);
@@ -297,151 +299,132 @@ body {
     margin: 0;
 }
 
-/* GRID DO ALFABETO */
-.grid-alfabeto {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 16px;
-    margin-top: 8px;
+/* 
+   TIMELINE (história)
+    */
+.timeline {
+    position: relative;
+    padding-left: 32px;
 }
 
-.letra-card {
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--destaque), rgba(0, 200, 255, .05));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.timeline-ponto {
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--destaque);
+    box-shadow: 0 0 0 4px rgba(0, 200, 255, .15);
+}
+
+.timeline-item h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: .95rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.timeline-item p {
+    font-size: .85rem;
+    color: var(--texto-sec);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* 
+   CARDS DE ESTATÍSTICA
+    */
+.stat-card {
     background: var(--card-fundo);
     border: 1px solid var(--borda);
-    border-radius: 14px;
-    overflow: hidden;
-    text-align: center;
-    text-decoration: none;
-    transition: transform .25s, border-color .25s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-}
-
-.letra-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(0, 200, 255, .35);
-}
-
-.letra-card.ativa {
-    border-color: var(--destaque);
-    box-shadow: 0 0 0 2px rgba(0, 200, 255, .25);
-}
-
-.letra-card img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-}
-
-.letra-card span {
-    display: block;
-    padding: 8px 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: var(--destaque);
-}
-
-/* PAINEL DE LETRA AMPLIADA (overlay) */
-.painel-letra {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    background: rgba(5, 9, 20, .92);
-    backdrop-filter: blur(12px);
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.painel-letra.aberto {
-    display: flex;
-}
-
-.painel-letra-conteudo {
-    background: var(--card-fundo);
-    border: 1px solid rgba(0, 200, 255, .3);
-    border-radius: 24px;
-    padding: 40px;
-    max-width: 420px;
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
-
-.painel-letra-conteudo img {
-    width: 100%;
-    max-width: 300px;
     border-radius: 16px;
-    margin-bottom: 20px;
+    padding: 28px;
+    text-align: center;
+    transition: border-color .25s, transform .25s;
 }
 
-.painel-letra-titulo {
+.stat-card:hover {
+    border-color: rgba(0, 200, 255, .3);
+    transform: translateY(-4px);
+}
+
+.stat-card .numero {
     font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 800;
-    color: var(--destaque);
+    background: linear-gradient(135deg, var(--destaque), #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 1;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
-.painel-letra-sub {
-    font-size: .88rem;
+.stat-card .rotulo {
+    font-size: .84rem;
     color: var(--texto-sec);
-    margin-bottom: 24px;
 }
 
-.painel-nav {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
+/* 
+   ACCORDION
+    */
+.accordion-escuro .accordion-item {
+    background: var(--card-fundo);
+    border: 1px solid var(--borda);
+    border-radius: 12px !important;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
-.btn-nav {
-    background: rgba(255, 255, 255, .07);
-    border: 1px solid rgba(255, 255, 255, .12);
+.accordion-escuro .accordion-button {
+    background: var(--card-fundo);
     color: #fff;
-    border-radius: 10px;
-    padding: 8px 20px;
-    font-size: .88rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    transition: all .2s;
-}
-
-.btn-nav:hover {
-    background: rgba(0, 200, 255, .15);
-    border-color: var(--destaque);
-    color: var(--destaque);
-}
-
-.btn-fechar-painel {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background: rgba(255, 255, 255, .07);
-    border: 1px solid rgba(255, 255, 255, .12);
-    color: #fff;
-    border-radius: 8px;
-    padding: 6px 10px;
+    font-family: 'Poppins', sans-serif;
     font-size: .9rem;
-    cursor: pointer;
-    transition: all .2s;
+    font-weight: 600;
+    box-shadow: none;
 }
 
-.btn-fechar-painel:hover {
-    background: rgba(239, 68, 68, .2);
-    border-color: rgba(239, 68, 68, .4);
-    color: #f87171;
+.accordion-escuro .accordion-button:not(.collapsed) {
+    color: var(--destaque);
+    background: rgba(0, 200, 255, .05);
 }
 
-/* ALERTA INFORMATIVO */
+.accordion-escuro .accordion-button::after {
+    filter: invert(1) sepia(1) saturate(0) brightness(2);
+}
+
+.accordion-escuro .accordion-body {
+    background: var(--card-fundo);
+    color: var(--texto-sec);
+    font-size: .88rem;
+    line-height: 1.7;
+    padding: 16px 20px 20px;
+}
+
+.accordion-escuro .accordion-body strong {
+    color: #fff;
+}
+
+/* 
+   ALERTA INFORMATIVO
+    */
 .alerta-info {
     background: rgba(0, 200, 255, .08);
     border: 1px solid rgba(0, 200, 255, .2);
@@ -456,7 +439,9 @@ body {
     color: var(--destaque);
 }
 
-/* FOOTER */
+/* 
+   FOOTER
+    */
 .footer-section {
     background: #060b16;
     border-top: 1px solid rgba(255, 255, 255, .06);
@@ -568,7 +553,9 @@ body {
     color: var(--destaque);
 }
 
-/* ANIMAÇÕES */
+/* 
+   ANIMAÇÕES
+    */
 @keyframes subirFadeIn {
     from {
         opacity: 0;
@@ -593,7 +580,9 @@ body {
     animation: subirFadeIn .5s .2s ease both;
 }
 
-/* RESPONSIVIDADE */
+/* 
+   RESPONSIVIDADE
+    */
 @media (max-width: 768px) {
     .bloco-info {
         padding: 24px 20px;
@@ -606,183 +595,5 @@ body {
     .btn-voltar {
         top: 72px;
         left: 12px;
-    }
-
-    .grid-alfabeto {
-        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-        gap: 10px;
-    }
-
-    .painel-letra-conteudo {
-        padding: 28px 20px;
-    }
-}
-
-/* Grid do alfabeto */
-.grid-alfabeto {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 14px;
-    margin-top: 8px;
-}
-
-/* Card de cada letra */
-.letra-card {
-    background: var(--card-fundo);
-    border: 1px solid var(--borda);
-    border-radius: 14px;
-    overflow: hidden;
-    text-align: center;
-    cursor: pointer;
-    transition: transform .25s, border-color .25s, box-shadow .25s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 6px;
-}
-
-.letra-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(0, 200, 255, .4);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, .35), 0 0 0 1px rgba(0, 200, 255, .15);
-}
-
-.letra-card.ativa {
-    border-color: var(--destaque);
-    box-shadow: 0 0 0 2px rgba(0, 200, 255, .3);
-}
-
-.letra-card img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-}
-
-.letra-card span {
-    display: block;
-    padding: 8px 0 2px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: var(--destaque);
-}
-
-/* Painel de exibição da letra ampliada */
-.painel-letra {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(5, 9, 20, 0.88);
-    backdrop-filter: blur(12px);
-    z-index: 9999;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-}
-
-.painel-letra.visivel {
-    display: flex;
-}
-
-.painel-conteudo {
-    background: var(--card-fundo);
-    border: 1px solid rgba(0, 200, 255, .25);
-    border-radius: 24px;
-    padding: 40px 48px;
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-    position: relative;
-    animation: subirFadeIn .3s ease both;
-}
-
-.painel-conteudo img {
-    max-width: 260px;
-    width: 100%;
-    border-radius: 16px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(0, 200, 255, .15);
-}
-
-.painel-letra-label {
-    font-size: .78rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--texto-sec);
-    margin-bottom: 6px;
-}
-
-.painel-letra-nome {
-    font-family: 'Poppins', sans-serif;
-    font-size: 4rem;
-    font-weight: 800;
-    color: var(--destaque);
-    line-height: 1;
-    margin-bottom: 20px;
-}
-
-.btn-fechar-painel {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, .07);
-    border: 1px solid rgba(255, 255, 255, .1);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background .2s;
-}
-
-.btn-fechar-painel:hover {
-    background: rgba(255, 255, 255, .14);
-}
-
-/* Navegação entre letras no painel */
-.painel-nav {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-top: 4px;
-}
-
-.btn-nav {
-    background: rgba(0, 200, 255, .1);
-    border: 1px solid rgba(0, 200, 255, .25);
-    color: var(--destaque);
-    border-radius: 10px;
-    padding: 8px 20px;
-    font-size: .85rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all .2s;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.btn-nav:hover {
-    background: rgba(0, 200, 255, .2);
-}
-
-.btn-nav:disabled {
-    opacity: .3;
-    cursor: default;
-}
-
-@media (max-width: 500px) {
-    .grid-alfabeto {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-        gap: 10px;
-    }
-
-    .painel-conteudo {
-        padding: 28px 20px;
     }
 }

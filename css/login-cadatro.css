@@ -1,0 +1,226 @@
+/* VARIÁVEIS */
+:root {
+    --destaque:   #00c8ff;
+    --destaque-2: #0ea5e9;
+    --fundo:      #0a0f1e;
+    --fundo-2:    #111827;
+    --fundo-3:    #1a2235;
+    --card-fundo: #141c2e;
+    --borda:      rgba(255,255,255,.07);
+    --borda-foco: rgba(0,200,255,.45);
+    --texto-sec:  #8899aa;
+    --branco:     #e2e8f0;
+}
+
+/* RESET */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* CORPO */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--fundo);
+    color: var(--branco);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+/* FUNDO COM GRADIENTE RADIAL IGUAL AO HERO DAS PÁGINAS INTERNAS */
+body::before {
+    content: '';
+    position: fixed; inset: 0; z-index: 0;
+    background:
+        radial-gradient(ellipse 70% 55% at 15% 50%, rgba(0,200,255,.1) 0%, transparent 65%),
+        radial-gradient(ellipse 55% 50% at 85% 20%, rgba(167,139,250,.09) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 440px;
+    padding: 20px 16px;
+}
+
+/* CARD DO FORMULÁRIO */
+form,
+.container > div.card-auth {
+    background: var(--card-fundo);
+    border: 1px solid var(--borda);
+    border-radius: 24px;
+    padding: 44px 40px;
+    box-shadow: 0 24px 64px rgba(0,0,0,.45);
+    animation: subirFadeIn .45s ease both;
+}
+
+/* LOGO */
+.logo-center {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.9rem; font-weight: 800;
+    color: #fff; text-decoration: none;
+    text-align: center; letter-spacing: -1px;
+    margin-bottom: 28px;
+}
+.logo-center span { color: var(--destaque); }
+
+/* SUBTÍTULO (CADASTRO) */
+.subtitle {
+    text-align: center;
+    color: var(--texto-sec);
+    font-size: .88rem;
+    line-height: 1.6;
+    margin-top: -18px;
+    margin-bottom: 28px;
+}
+
+/* INPUTS */
+.input-login,
+.input-cadastro,
+.date-cadastro,
+.options-nivellibras {
+    margin-bottom: 14px;
+}
+
+.input-login input,
+.input-cadastro input,
+.date-cadastro input,
+.options-nivellibras select {
+    width: 100%;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.1);
+    color: #fff;
+    border-radius: 12px;
+    padding: 13px 16px;
+    font-size: .9rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color .2s, box-shadow .2s, background .2s;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.input-login input::placeholder,
+.input-cadastro input::placeholder,
+.date-cadastro input::placeholder { color: var(--texto-sec); }
+
+.input-login input:focus,
+.input-cadastro input:focus,
+.date-cadastro input:focus,
+.options-nivellibras select:focus {
+    background: rgba(255,255,255,.07);
+    border-color: var(--borda-foco);
+    box-shadow: 0 0 0 3px rgba(0,200,255,.12);
+}
+
+/* SELECT */
+.options-nivellibras select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238899aa' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+.options-nivellibras select option {
+    background: var(--fundo-3);
+    color: #fff;
+}
+
+/* INPUT DE DATA */
+.date-cadastro input[type="date"] {
+    color-scheme: dark;
+}
+.date-cadastro input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(.6);
+    cursor: pointer;
+}
+
+/* BOTÕES PRINCIPAIS */
+.login,
+.btn-cadastro {
+    width: 100%;
+    background: linear-gradient(135deg, var(--destaque), var(--destaque-2));
+    color: #fff; border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: .95rem; font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer; margin-top: 6px;
+    transition: transform .2s, box-shadow .2s;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.login:hover,
+.btn-cadastro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0,200,255,.35);
+}
+.login:active,
+.btn-cadastro:active { transform: translateY(0); }
+
+/* LINKS SECUNDÁRIOS */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    flex-wrap: wrap; gap: 8px;
+}
+.remember-forgot a {
+    color: var(--texto-sec);
+    text-decoration: none;
+    font-size: .83rem;
+    transition: color .2s;
+}
+.remember-forgot a:hover { color: var(--destaque); }
+
+.login-link {
+    text-align: center;
+    color: var(--texto-sec);
+    font-size: .85rem;
+    margin-top: 22px;
+}
+.login-link a {
+    color: var(--destaque);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .2s;
+}
+.login-link a:hover { color: var(--destaque-2); }
+
+/* BOTÃO VOLTAR */
+.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--texto-sec);
+    text-decoration: none;
+    font-size: .83rem;
+    transition: color .2s;
+}
+.voltar:hover { color: var(--destaque); }
+
+/* DIVISOR (PARA SEPARAR SEÇÕES) */
+.divisor {
+    display: flex; align-items: center; gap: 12px;
+    margin: 22px 0;
+}
+.divisor::before, .divisor::after {
+    content: ''; flex: 1; height: 1px;
+    background: rgba(255,255,255,.08);
+}
+.divisor span { font-size: .78rem; color: var(--texto-sec); white-space: nowrap; }
+
+/* ANIMAÇÕES */
+@keyframes subirFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/*  RESPONSIVIDADE */
+@media (max-width: 480px) {
+    form,
+    .container > div.card-auth { padding: 32px 24px; }
+    .logo-center { font-size: 1.65rem; }
+    .remember-forgot { flex-direction: column; align-items: center; }
+}

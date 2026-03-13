@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Números - Libras</title>
+    <title>Números em Libras - LIBRAS.info</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/sectioncategorias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/numeros.css">
 </head>
+
 <body>
-    <a href="./index.php" class="btn btn-back" style="background-color: var(--purple); color: white;">
-        <i class="bi bi-arrow-left me-2"></i>Voltar
-    </a>
 
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <div class="icon-wrapper bg-purple mb-3" style="width: 100px; height: 100px; margin: 0 auto;">
-                <i class="bi bi-hash fs-1 text-white"></i>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.php">
+                <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+                <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.php#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#sinais">Sinais</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Números</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./videos.php">Vídeos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#sobre">Sobre</a></li>
+                </ul>
+                <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
             </div>
-            <h1 class="display-4 fw-bold text-purple">Números em Libras</h1>
-            <p class="lead text-muted">Aprenda a contar em Libras</p>
         </div>
+    </nav>
+    <a href="./index.php" class="btn-voltar"><i class="bi bi-arrow-left"></i> Voltar</a>
 
-        <div class="info-section">
-            <h2><i class="bi bi-lightbulb-fill text-purple me-2"></i>Como funcionam os números em Libras</h2>
-            <p>
-                Os números em Libras são sinalizados com as mãos de forma visual e lógica. Existem duas formas principais:
-            </p>
+    <!-- Hero -->
+    <section class="pagina-hero">
+        <div class="container">
+            <div class="text-center fade-up">
+                <div class="hero-icone-circulo"><i class="bi bi-hash"></i></div>
+                <div class="hero-eyebrow"><i class="bi bi-123"></i> Aprenda a contar</div>
+                <h1>Números em <span class="gradiente">Libras</span></h1>
+                <p class="lead mx-auto">Do zero ao trilhão — domine a contagem em língua de sinais</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container pb-5">
+
+        <!-- Como funcionam -->
+        <div class="bloco-info fade-up-2">
+            <h2><i class="bi bi-lightbulb-fill"></i> Como funcionam os números em Libras</h2>
             <ul>
                 <li><strong>Números de 0 a 4:</strong> Utilizam a quantidade de dedos correspondente</li>
                 <li><strong>Números de 5 a 9:</strong> Combinam a mão aberta (5) com dedos adicionais</li>
@@ -34,291 +61,229 @@
             </ul>
         </div>
 
-        <h3 class="text-purple fw-bold mb-4 mt-5">
-            <i class="bi bi-1-circle me-2"></i>Números de 0 a 10
-        </h3>
+        <!-- 0 a 10 -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-1-circle"></i> Números de 0 a 9</span>
+            <div class="separador-secao-linha"></div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">0</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/gNvjjvz4SsM"
+                            title="Número 0 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">1</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/_pijJeY9gbk"
+                            title="Número 1 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">2</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/cAdYY3PxZoI"
+                            title="Número 2 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">3 e 4</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/kyeUrkeya-s"
+                            title="Número 3 e 4 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">5</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/OmAJaq206VY"
+                            title="Número 5 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">6</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/ktZWXEHIYjk"
+                            title="Número 6 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">7</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/viOIEfDahpc"
+                            title="Número 7 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">8</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/inuojMTzaPg"
+                            title="Número 8 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="sinal-card">
+                    <div class="numero-display">9</div>
+                    <div class="ratio" style="--bs-aspect-ratio: 177.78%; max-height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                        <iframe src="https://www.youtube.com/embed/QZVp9oVz1bM"
+                            title="Número 9 em libras"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Números maiores -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-123"></i> Números Maiores</span>
+            <div class="separador-secao-linha"></div>
+        </div>
 
         <div class="row g-4">
-            <!-- 0 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">0</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Forma de O</p>
+            <div class="col-md-6">
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-arrow-up-circle-fill text-info me-2"></i>Dezenas (30, 40, 50…)</h5>
+                        <p>As dezenas são formadas combinando o número da dezena com o sinal de zero. Por exemplo: 30 é o sinal de 3 seguido do sinal de 0.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- 1 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">1</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Um dedo</p>
+            <div class="col-md-6">
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-calculator-fill text-info me-2"></i>Centenas (100, 200…)</h5>
+                        <p>100 tem um sinal específico (cem). As outras centenas são formadas pelo número + sinal de cem. Exemplo: 200 = 2 + cem.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- 2 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">2</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Dois dedos</p>
+            <div class="col-md-6">
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-stack text-info me-2"></i>Milhares (1.000, 2.000…)</h5>
+                        <p>1.000 tem seu sinal específico (mil). Os outros milhares seguem o padrão: número + mil. Exemplo: 5.000 = 5 + mil.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- 3 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">3</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Três dedos</p>
-                </div>
-            </div>
-
-            <!-- 4 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">4</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Quatro dedos</p>
-                </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">5</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Mão aberta</p>
-                </div>
-            </div>
-
-            <!-- 6 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">6</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Polegar e mínimo</p>
-                </div>
-            </div>
-
-            <!-- 7 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">7</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Indicador dobrado</p>
-                </div>
-            </div>
-
-            <!-- 8 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">8</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Indicador e médio dobrados</p>
-                </div>
-            </div>
-
-            <!-- 9 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">9</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Forma específica</p>
-                </div>
-            </div>
-
-            <!-- 10 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">10</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Movimento giratório</p>
+            <div class="col-md-6">
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-infinity text-info me-2"></i>Milhões e além</h5>
+                        <p>Milhão, bilhão e trilhão possuem sinais específicos. Números compostos são formados pela combinação sequencial das partes.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <h3 class="text-purple fw-bold mb-4 mt-5">
-            <i class="bi bi-2-circle me-2"></i>Números de 11 a 20
-        </h3>
+        <!-- Aplicações práticas -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-award-fill"></i> Aplicações Práticas</span>
+            <div class="separador-secao-linha"></div>
+        </div>
 
         <div class="row g-4">
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">11</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Movimento para cima</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">12</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Movimento para cima</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">13</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Movimento para cima</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">14</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Movimento para cima</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">15</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Movimento para cima</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">16-19</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">Combinações específicas</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="number-card">
-                    <div class="number-display">20</div>
-                    <div class="number-image"></div>
-                    <p class="text-muted mb-0">2 + 0</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="info-section mt-5">
-            <h2><i class="bi bi-123 text-purple me-2"></i>Números Maiores</h2>
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card border-0 bg-light h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-purple">
-                                <i class="bi bi-arrow-up-circle-fill me-2"></i>Dezenas (30, 40, 50...)
-                            </h5>
-                            <p class="card-text">
-                                As dezenas são formadas combinando o número da dezena com o sinal de zero. 
-                                Por exemplo: 30 é o sinal de 3 seguido do sinal de 0.
-                            </p>
-                        </div>
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:28px 20px;">
+                        <i class="bi bi-clock-fill mb-3 d-block" style="font-size:2rem;color:var(--destaque);"></i>
+                        <h5>Horas</h5>
+                        <p>Use os números para indicar horários e tempo</p>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card border-0 bg-light h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-purple">
-                                <i class="bi bi-calculator-fill me-2"></i>Centenas (100, 200, 300...)
-                            </h5>
-                            <p class="card-text">
-                                100 tem um sinal específico (cem). As outras centenas são formadas pelo número + o sinal de cem. 
-                                Exemplo: 200 = 2 + cem.
-                            </p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:28px 20px;">
+                        <i class="bi bi-currency-dollar mb-3 d-block" style="font-size:2rem;color:var(--destaque);"></i>
+                        <h5>Valores</h5>
+                        <p>Expresse preços e quantias monetárias</p>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card border-0 bg-light h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-purple">
-                                <i class="bi bi-stack me-2"></i>Milhares (1.000, 2.000...)
-                            </h5>
-                            <p class="card-text">
-                                1.000 tem seu sinal específico (mil). Os outros milhares seguem o padrão: número + mil. 
-                                Exemplo: 5.000 = 5 + mil.
-                            </p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:28px 20px;">
+                        <i class="bi bi-calendar-fill mb-3 d-block" style="font-size:2rem;color:var(--destaque);"></i>
+                        <h5>Datas</h5>
+                        <p>Comunique dias, meses e anos</p>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card border-0 bg-light h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-purple">
-                                <i class="bi bi-infinity me-2"></i>Milhões e além
-                            </h5>
-                            <p class="card-text">
-                                Milhão, bilhão e trilhão possuem sinais específicos. Números compostos são formados 
-                                pela combinação sequencial das partes.
-                            </p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:28px 20px;">
+                        <i class="bi bi-telephone-fill mb-3 d-block" style="font-size:2rem;color:var(--destaque);"></i>
+                        <h5>Telefones</h5>
+                        <p>Compartilhe números de contato</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:28px 20px;">
+                        <i class="bi bi-house-fill mb-3 d-block" style="font-size:2rem;color:var(--destaque);"></i>
+                        <h5>Endereços</h5>
+                        <p>Indique números de casas e apartamentos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:28px 20px;">
+                        <i class="bi bi-speedometer2 mb-3 d-block" style="font-size:2rem;color:var(--destaque);"></i>
+                        <h5>Medidas</h5>
+                        <p>Comunique pesos, distâncias e quantidades</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="info-section">
-            <h2><i class="bi bi-award-fill text-purple me-2"></i>Aplicações Práticas</h2>
-            
-            <div class="row g-4 mt-3">
-                <div class="col-md-4">
-                    <div class="text-center p-4 rounded" style="background-color: rgba(124, 58, 237, 0.1);">
-                        <i class="bi bi-clock-fill text-purple fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Horas</h5>
-                        <p class="text-muted mb-0">Use os números para indicar horários e tempo</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="text-center p-4 rounded" style="background-color: rgba(124, 58, 237, 0.1);">
-                        <i class="bi bi-currency-dollar text-purple fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Valores</h5>
-                        <p class="text-muted mb-0">Expresse preços e quantias monetárias</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="text-center p-4 rounded" style="background-color: rgba(124, 58, 237, 0.1);">
-                        <i class="bi bi-calendar-fill text-purple fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Datas</h5>
-                        <p class="text-muted mb-0">Comunique dias, meses e anos</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="text-center p-4 rounded" style="background-color: rgba(124, 58, 237, 0.1);">
-                        <i class="bi bi-telephone-fill text-purple fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Telefones</h5>
-                        <p class="text-muted mb-0">Compartilhe números de contato</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="text-center p-4 rounded" style="background-color: rgba(124, 58, 237, 0.1);">
-                        <i class="bi bi-house-fill text-purple fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Endereços</h5>
-                        <p class="text-muted mb-0">Indique números de casas e apartamentos</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="text-center p-4 rounded" style="background-color: rgba(124, 58, 237, 0.1);">
-                        <i class="bi bi-speedometer2 text-purple fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Medidas</h5>
-                        <p class="text-muted mb-0">Comunique pesos, distâncias e quantidades</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="info-section">
-            <h2><i class="bi bi-lightbulb-fill text-purple me-2"></i>Dicas para Praticar Números</h2>
+        <!-- Dicas -->
+        <div class="bloco-info mt-4">
+            <h2><i class="bi bi-lightbulb-fill"></i> Dicas para Praticar Números</h2>
             <ul>
                 <li>Comece praticando os números de 0 a 10 até dominá-los completamente</li>
                 <li>Pratique contar objetos ao seu redor em Libras</li>
@@ -329,25 +294,81 @@
             </ul>
         </div>
 
-        <div class="alert alert-info mt-4" role="alert">
+        <div class="alerta-info mt-3">
             <i class="bi bi-info-circle-fill me-2"></i>
-            <strong>Importante:</strong> Alguns números podem ter variações regionais. Os sinais apresentados aqui são os mais comuns 
-            e amplamente utilizados no Brasil.
+            <strong>Importante:</strong> Alguns números podem ter variações regionais. Os sinais apresentados aqui são os mais comuns e amplamente utilizados no Brasil.
         </div>
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="./index.php" class="footer-brand">
+                        <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+                        <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
+                    </a>
+                    <p class="footer-description">Conectando pessoas através da Língua Brasileira de Sinais.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Aprender</h5>
+                    <ul class="footer-links">
+                        <li><a href="./alfabeto.php">Alfabeto</a></li>
+                        <li><a href="./numeros.php">Números</a></li>
+                        <li><a href="./cumprimentos.php">Cumprimentos</a></li>
+                        <li><a href="./familia.php">Família</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Recursos</h5>
+                    <ul class="footer-links">
+                        <li><a href="./videos.php">Vídeos</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="./sobre-Libras.php">Sobre Libras</a></li>
+                        <li><a href="./legislacao.php">Legislação</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Institucional</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="./legislacao.php">Legislação</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                        <li><a href="./fale-conosco.php">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 LIBRAS.info. Todos os direitos reservados.</p>
+                <div class="footer-legal"><a href="#">Termos de Uso</a><a href="#">Privacidade</a></div>
+            </div>
+        </div>
+    </footer>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-    
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.custom-navbar').classList.toggle('rolando', window.scrollY > 50);
+        });
+    </script>
 </body>
+
 </html>

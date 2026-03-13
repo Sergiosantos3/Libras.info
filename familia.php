@@ -3,562 +3,428 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Família - Libras</title>
+    <title>Família em Libras - LIBRAS.info</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/sectioncategorias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/familia.css">
 </head>
 <body>
-    <a href="./index.php" class="btn btn-warning btn-back">
-        <i class="bi bi-arrow-left me-2"></i>Voltar
-    </a>
 
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <div class="icon-wrapper bg-warning mb-3" style="width: 100px; height: 100px; margin: 0 auto;">
-                <i class="bi bi-people-fill fs-1 text-white"></i>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.php">
+                <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+                <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.php#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#sinais">Sinais</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./familia.php">Família</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./videos.php">Vídeos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#sobre">Sobre</a></li>
+                </ul>
+                <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
             </div>
-            <h1 class="display-4 fw-bold text-warning">Família</h1>
-            <p class="lead text-muted">Sinais relacionados à família</p>
+        </div>
+    </nav>
+    <a href="./index.php" class="btn-voltar"><i class="bi bi-arrow-left"></i> Voltar</a>
+
+    <section class="pagina-hero">
+        <div class="container">
+            <div class="text-center fade-up">
+                <div class="hero-icone-circulo"><i class="bi bi-people-fill"></i></div>
+                <div class="hero-eyebrow"><i class="bi bi-house-heart-fill"></i> Sinais do lar</div>
+                <h1>Família em <span class="gradiente">Libras</span></h1>
+                <p class="lead mx-auto">Aprenda os sinais dos membros da família e como falar sobre seus relacionamentos</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container pb-5">
+
+        <div class="bloco-info fade-up-2">
+            <h2><i class="bi bi-house-heart-fill"></i> A Família em Libras</h2>
+            <p>Os sinais relacionados à família são fundamentais na comunicação do dia a dia. Eles permitem falar sobre relacionamentos, apresentar pessoas e compartilhar histórias familiares. Muitos desses sinais têm características visuais que remetem ao papel de cada membro na família.</p>
         </div>
 
-        <div class="info-section">
-            <h2><i class="bi bi-house-heart-fill text-warning me-2"></i>A Família em Libras</h2>
-            <p>
-                Os sinais relacionados à família são fundamentais na comunicação do dia a dia. Eles permitem 
-                falar sobre relacionamentos, apresentar pessoas e compartilhar histórias familiares. Muitos 
-                desses sinais têm características visuais que remetem ao papel de cada membro na família.
-            </p>
+        <!-- Núcleo Familiar -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-diagram-3-fill"></i> Núcleo Familiar</span>
+            <div class="separador-secao-linha"></div>
         </div>
-
-        <h3 class="text-warning fw-bold mb-4 mt-5">
-            <i class="bi bi-diagram-3-fill me-2"></i>Núcleo Familiar
-        </h3>
-
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
                     <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">FAMÍLIA</h5>
-                        <p class="card-text text-muted">
-                            <img src="./img/img.familia/familia.JPG" alt="Familia">
-                            Mãos em formato de "F" movendo em círculo, representando união e grupo familiar.
-                        </p>
-                        <span class="badge bg-warning text-dark">Geral</span>
+                        <img src="./img/img.familia/familia.JPG" alt="FAMÍLIA em Libras">
+                        <h5>FAMÍLIA</h5>
+                        <p>Mãos em formato de "F" movendo em círculo, representando união e grupo familiar.</p>
+                        <span class="badge-geral">Geral</span>
                     </div>
                 </div>
             </div>
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
+                    <div class="card-body">
+                        <img src="./img/img.familia/pai.JPG" alt="PAI em Libras">
+                        <h5>PAI</h5>
+                        <p>Mão aberta tocando a testa, movimento que representa autoridade e proteção.</p>
+                        <span class="badge-masculino">Masculino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
+                    <div class="card-body">
+                        <img src="./img/img.familia/mae.JPG" alt="MÃE em Libras">
+                        <h5>MÃE</h5>
+                        <p>Mão aberta tocando o queixo, representando carinho e cuidado maternal.</p>
+                        <span class="badge-feminino">Feminino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
+                    <div class="card-body">
+                        <img src="./img/img.familia/filho.JPG" alt="FILHO em Libras">
+                        <h5>FILHO</h5>
+                        <p>Combinação do sinal de "homem" + movimento indicando descendência.</p>
+                        <span class="badge-masculino">Masculino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
+                    <div class="card-body">
+                        <img src="./img/img.familia/filha.JPG" alt="FILHA em Libras">
+                        <h5>FILHA</h5>
+                        <p>Combinação do sinal de "mulher" + movimento indicando descendência.</p>
+                        <span class="badge-feminino">Feminino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
+                    <div class="card-body">
+                        <img src="./img/img.familia/bebe.JPG" alt="BEBÊ em Libras">
+                        <h5>BEBÊ</h5>
+                        <p>Braços cruzados fazendo movimento de embalar um bebê.</p>
+                        <span class="badge-neutro">Neutro</span>
+                    </div>
+                </div>
+            </div>
+                    </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
-                    <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">PAI</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/pai.JPG" alt="Pai">
-                            Mão aberta tocando a testa, movimento que representa autoridade e proteção.
-                        </p>
-                        <span class="badge bg-primary">Masculino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
-                    <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">MÃE</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/mae.JPG" alt="Mãe">
-                            Mão aberta tocando o queixo, representando carinho e cuidado maternal.
-                        </p>
-                        <span class="badge bg-danger">Feminino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
-                    <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">FILHO</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/filho.JPG" alt="Filho">
-                            Combinação do sinal de "homem" + movimento indicando descendência ou mais jovem.
-                        </p>
-                        <span class="badge bg-primary">Masculino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
-                    <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">FILHA</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/filha.JPG" alt="Filha">
-                            Combinação do sinal de "mulher" + movimento indicando descendência ou mais jovem.
-                        </p>
-                        <span class="badge bg-danger">Feminino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
-                    <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">BEBÊ</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/bebe.JPG" alt="Bebê">
-                            Braços cruzados fazendo movimento de embalar um bebê, universal e expressivo.
-                        </p>
-                        <span class="badge bg-info">Neutro</span>
-                    </div>
-                </div>
-            </div>
+        <!-- Irmãos e Relacionamentos -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-people"></i> Irmãos e Relacionamentos</span>
+            <div class="separador-secao-linha"></div>
         </div>
-
-        <h3 class="text-warning fw-bold mb-4 mt-5">
-            <i class="bi bi-people me-2"></i>Irmãos e Relacionamentos
-        </h3>
-
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
                     <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">IRMÃO</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/irmao.JPG" alt="Irmão">
-                            Sinal de "homem" + indicação de igualdade/mesmo nível, mostrando relação fraterna.
-                        </p>
-                        <span class="badge bg-primary">Masculino</span>
+                        <img src="./img/img.familia/irmao.JPG" alt="IRMÃO em Libras">
+                        <h5>IRMÃO</h5>
+                        <p>Sinal de "homem" + indicação de igualdade/mesmo nível.</p>
+                        <span class="badge-masculino">Masculino</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
                     <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">IRMÃ</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/irma.JPG" alt="Irmã">
-                            Sinal de "mulher" + indicação de igualdade/mesmo nível, mostrando relação fraterna.
-                        </p>
-                        <span class="badge bg-danger">Feminino</span>
+                        <img src="./img/img.familia/irma.JPG" alt="IRMÃ em Libras">
+                        <h5>IRMÃ</h5>
+                        <p>Sinal de "mulher" + indicação de igualdade/mesmo nível.</p>
+                        <span class="badge-feminino">Feminino</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
                     <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">MARIDO</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/Marido.JPG" alt="Marido">
-                            Sinal de "homem" + sinal de "casamento" ou união conjugal.
-                        </p>
-                        <span class="badge bg-primary">Masculino</span>
+                        <img src="./img/img.familia/Marido.JPG" alt="MARIDO em Libras">
+                        <h5>MARIDO</h5>
+                        <p>Sinal de "homem" + sinal de "casamento" ou união conjugal.</p>
+                        <span class="badge-masculino">Masculino</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
                     <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">ESPOSA</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/esposa.JPG" alt="Esposa">
-                            Sinal de "mulher" + sinal de "casamento" ou união conjugal.
-                        </p>
-                        <span class="badge bg-danger">Feminino</span>
+                        <img src="./img/img.familia/esposa.JPG" alt="ESPOSA em Libras">
+                        <h5>ESPOSA</h5>
+                        <p>Sinal de "mulher" + sinal de "casamento" ou união conjugal.</p>
+                        <span class="badge-feminino">Feminino</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
                     <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">CASADO(A)</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/cadaso.JPG" alt="Casado(a)">
-                            Dedos entrelaçados ou movimento de colocar anel, simbolizando união matrimonial.
-                        </p>
-                        <span class="badge bg-success">Estado civil</span>
+                        <img src="./img/img.familia/cadaso.JPG" alt="CASADO(A) em Libras">
+                        <h5>CASADO(A)</h5>
+                        <p>Dedos entrelaçados ou movimento de colocar anel, simbolizando união.</p>
+                        <span class="badge-geral">Estado civil</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="content-card">
+                        <div class="col-md-6 col-lg-4">
+                <div class="conteudo-card">
                     <div class="card-body">
-                        <div class="text-center mb-3">
-                            <div style="font-size: 4rem;"></div>
-                        </div>
-                        <h5 class="card-title text-warning fw-bold">SOLTEIRO(A)</h5>
-                        <p class="card-text text-muted">
-                             <img src="./img/img.familia/solteiro.JPG" alt="Solteiro">
-                            Sinal específico indicando estado civil sem compromisso conjugal.
-                        </p>
-                        <span class="badge bg-secondary">Estado civil</span>
+                        <img src="./img/img.familia/solteiro.JPG" alt="SOLTEIRO(A) em Libras">
+                        <h5>SOLTEIRO(A)</h5>
+                        <p>Sinal específico indicando estado civil sem compromisso conjugal.</p>
+                        <span class="badge-neutro">Estado civil</span>
                     </div>
+                </div>
+            </div>
+                    </div>
+
+        <!-- Família Estendida -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-tree-fill"></i> Família Estendida</span>
+            <div class="separador-secao-linha"></div>
+        </div>
+        <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/avo.JPG" alt="AVÔ" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">AVÔ</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Pai do pai/mãe</p>
+                        <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/avó.JPG" alt="AVÓ" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">AVÓ</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Mãe do pai/mãe</p>
+                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/tio.JPG" alt="TIO" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">TIO</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Irmão do pai/mãe</p>
+                        <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/tia.JPG" alt="TIA" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">TIA</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Irmã do pai/mãe</p>
+                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/primo.JPG" alt="PRIMO" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">PRIMO</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Filho do tio/tia</p>
+                        <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/Prima.JPG" alt="PRIMA" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">PRIMA</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Filha do tio/tia</p>
+                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/neto.JPG" alt="NETO" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">NETO</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Filho do filho/filha</p>
+                        <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/neta.JPG" alt="NETA" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">NETA</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Filha do filho/filha</p>
+                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/sogro.JPG" alt="SOGRO" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">SOGRO</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Pai do cônjuge</p>
+                        <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/sogra.JPG" alt="SOGRA" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">SOGRA</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Mãe do cônjuge</p>
+                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/cunhado.JPG" alt="CUNHADO" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">CUNHADO</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Irmão do cônjuge</p>
+                        <span class="badge-masculino" style="font-size:.68rem;">Masculino</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                <div class="conteudo-card" style="text-align:center;">
+                    <div class="card-body">
+                        <img src="./img/img.familia/cunhada.JPG" alt="CUNHADA" style="max-height:120px;">
+                        <h5 style="font-size:.88rem;margin-bottom:2px;">CUNHADA</h5>
+                        <p style="font-size:.77rem;margin-bottom:8px;">Irmã do cônjuge</p>
+                        <span class="badge-feminino" style="font-size:.68rem;">Feminino</span>
+                    </div>
+                </div>
+            </div>
+                    </div>
+
+        <!-- Frases úteis -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-chat-square-text-fill"></i> Frases Úteis sobre Família</span>
+            <div class="separador-secao-linha"></div>
+        </div>
+
+        <div class="card-escuro">
+            <div class="card-body" style="padding:0;">
+                <div class="table-responsive">
+                    <table class="tabela-escura">
+                        <thead>
+                            <tr><th>Português</th><th>Uso em Contexto</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Esta é minha família</strong></td><td>Apresentando membros da família</td></tr>
+                            <tr><td><strong>Tenho dois irmãos</strong></td><td>Falando sobre irmãos</td></tr>
+                            <tr><td><strong>Minha mãe é surda</strong></td><td>Informando características familiares</td></tr>
+                            <tr><td><strong>Meu pai trabalha como…</strong></td><td>Descrevendo profissão dos pais</td></tr>
+                            <tr><td><strong>Você tem filhos?</strong></td><td>Perguntando sobre descendentes</td></tr>
+                            <tr><td><strong>Sou casado(a)</strong></td><td>Informando estado civil</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
 
-        <h3 class="text-warning fw-bold mb-4 mt-5">
-            <i class="bi bi-tree-fill me-2"></i>Família Estendida
-        </h3>
-
+        <!-- Dicas -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-lightbulb-fill"></i> Dicas Importantes</span>
+            <div class="separador-secao-linha"></div>
+        </div>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">AVÔ</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/avo.JPG" alt="Avô">Pai do pai/mãe</p>
-                        <span class="badge bg-primary badge-sm">Masculino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">AVÓ</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/avó.JPG" alt="Avó">Mãe do pai/mãe</p>
-                        <span class="badge bg-danger badge-sm">Feminino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">TIO</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/tio.JPG" alt="Tio">Irmão do pai/mãe</p>
-                        <span class="badge bg-primary badge-sm">Masculino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">TIA</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/tia.JPG" alt="Tia">Irmã do pai/mãe</p>
-                        <span class="badge bg-danger badge-sm">Feminino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">PRIMO</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/primo.JPG" alt="Primo">Filho do tio/tia</p>
-                        <span class="badge bg-primary badge-sm">Masculino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">PRIMA</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/Prima.JPG" alt="Prima">Filha do tio/tia</p>
-                        <span class="badge bg-danger badge-sm">Feminino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">NETO</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/neto.JPG" alt="Neto">Filho do filho/filha</p>
-                        <span class="badge bg-primary badge-sm">Masculino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">NETA</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/neta.JPG" alt="Neta">Filha do filho/filha</p>
-                        <span class="badge bg-danger badge-sm">Feminino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">SOGRO</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/sogro.JPG" alt="Sogro">Pai do cônjuge</p>
-                        <span class="badge bg-primary badge-sm">Masculino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">SOGRA</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/sogra.JPG" alt="Sogra">Mãe do cônjuge</p>
-                        <span class="badge bg-danger badge-sm">Feminino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">CUNHADO</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/cunhado.JPG" alt="Cunhado">Irmão do cônjuge</p>
-                        <span class="badge bg-primary badge-sm">Masculino</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="content-card">
-                    <div class="card-body text-center">
-                        <div style="font-size: 3rem;" class="mb-3"></div>
-                        <h6 class="fw-bold text-warning">CUNHADA</h6>
-                        <p class="card-text text-muted small">
-                             <img src="./img/img.familia/cunhada.JPG" alt="Cunhada">Irmã do cônjuge</p>
-                        <span class="badge bg-danger badge-sm">Feminino</span>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-6"><div class="card-escuro"><div class="card-body">
+                <h5><i class="bi bi-gender-ambiguous text-info me-2"></i>Gênero nos Sinais</h5>
+                <p>Sinais masculinos geralmente são feitos na parte superior do rosto (testa) e femininos na parte inferior (queixo/boca).</p>
+            </div></div></div>
+            <div class="col-md-6"><div class="card-escuro"><div class="card-body">
+                <h5><i class="bi bi-arrow-left-right text-info me-2"></i>Variações Regionais</h5>
+                <p>Alguns sinais de família podem variar entre regiões do Brasil. Os apresentados aqui são os mais comuns e reconhecidos.</p>
+            </div></div></div>
+            <div class="col-md-6"><div class="card-escuro"><div class="card-body">
+                <h5><i class="bi bi-people-fill text-info me-2"></i>Família Moderna</h5>
+                <p>A comunidade surda reconhece diversos modelos familiares. Use os sinais de forma inclusiva para representar todas as configurações.</p>
+            </div></div></div>
+            <div class="col-md-6"><div class="card-escuro"><div class="card-body">
+                <h5><i class="bi bi-heart-fill text-info me-2"></i>Contexto Cultural</h5>
+                <p>Na cultura surda, "família" pode incluir amigos próximos e a comunidade surda, que muitas vezes funciona como uma segunda família.</p>
+            </div></div></div>
         </div>
 
-        <div class="info-section mt-5">
-            <h2><i class="bi bi-tree-fill text-warning me-2"></i>Árvore Genealógica</h2>
-            <div class="bg-light p-4 rounded">
-                <div class="text-center mb-4">
-                    <h5 class="text-warning">Estrutura Familiar Básica</h5>
-                </div>
-                <div class="row text-center">
-                    <div class="col-12 mb-3">
-                        <div class="d-inline-block mx-3">
-                            <div class="mb-2"></div>
-                            <small>Avós</small>
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <div class="d-inline-block mx-2">
-                            <div class="mb-2"></div>
-                            <small>Pai</small>
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <div class="mb-2"></div>
-                            <small>Mãe</small>
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <div class="mb-2"></div>
-                            <small>Tio</small>
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <div class="mb-2"></div>
-                            <small>Tia</small>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-inline-block mx-2">
-                            <div class="mb-2"></div>
-                            <small>Filho</small>
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <div class="mb-2"></div>
-                            <small>Filha</small>
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <div class="mb-2"></div>
-                            <small>Primo</small>
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <div class="mb-2"></div>
-                            <small>Prima</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="info-section">
-            <h2><i class="bi bi-chat-square-text-fill text-warning me-2"></i>Frases Úteis sobre Família</h2>
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead class="table-warning">
-                        <tr>
-                            <th>Português</th>
-                            <th>Uso em Contexto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Esta é minha família</strong></td>
-                            <td>Apresentando membros da família</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Tenho dois irmãos</strong></td>
-                            <td>Falando sobre irmãos</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Minha mãe é surda</strong></td>
-                            <td>Informando características familiares</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Meu pai trabalha como...</strong></td>
-                            <td>Descrevendo profissão dos pais</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Você tem filhos?</strong></td>
-                            <td>Perguntando sobre descendentes</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Sou casado(a)</strong></td>
-                            <td>Informando estado civil</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="info-section">
-            <h2><i class="bi bi-lightbulb-fill text-warning me-2"></i>Dicas Importantes</h2>
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card border-warning h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">
-                                <i class="bi bi-gender-ambiguous me-2"></i>Gênero nos Sinais
-                            </h5>
-                            <p class="card-text">
-                                Muitos sinais familiares têm versões masculina e feminina. Geralmente, sinais masculinos 
-                                são feitos na parte superior do rosto (testa) e femininos na parte inferior (queixo/boca).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card border-warning h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">
-                                <i class="bi bi-arrow-left-right me-2"></i>Variações Regionais
-                            </h5>
-                            <p class="card-text">
-                                Alguns sinais de família podem variar entre regiões do Brasil. Os apresentados aqui são 
-                                os mais comuns e amplamente reconhecidos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card border-warning h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">
-                                <i class="bi bi-people-fill me-2"></i>Família Moderna
-                            </h5>
-                            <p class="card-text">
-                                A comunidade surda reconhece diversos modelos familiares. Use os sinais de forma inclusiva 
-                                para representar todas as configurações familiares.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card border-warning h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">
-                                <i class="bi bi-heart-fill me-2"></i>Contexto Cultural
-                            </h5>
-                            <p class="card-text">
-                                Na cultura surda, a "família" pode incluir amigos próximos e a comunidade surda, 
-                                que muitas vezes funciona como uma segunda família.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="alert alert-warning mt-4" role="alert">
+        <div class="alerta-aviso mt-4">
             <i class="bi bi-info-circle-fill me-2"></i>
-            <strong>Curiosidade:</strong> Muitas pessoas surdas têm "nomes em sinais" - apelidos visuais que as 
-            identificam na comunidade surda. Esses nomes são geralmente dados por outros surdos e refletem 
-            características físicas ou de personalidade.
+            <strong>Curiosidade:</strong> Muitas pessoas surdas têm "nomes em sinais" — apelidos visuais dados pela comunidade surda que refletem características físicas ou de personalidade.
         </div>
-    </div>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      </div>
-    
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
 
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="./index.php" class="footer-brand">
+                        <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+                        <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
+                    </a>
+                    <p class="footer-description">Conectando pessoas através da Língua Brasileira de Sinais.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Aprender</h5>
+                    <ul class="footer-links">
+                        <li><a href="./alfabeto.php">Alfabeto</a></li>
+                        <li><a href="./numeros.php">Números</a></li>
+                        <li><a href="./cumprimentos.php">Cumprimentos</a></li>
+                        <li><a href="./familia.php">Família</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Recursos</h5>
+                    <ul class="footer-links">
+                        <li><a href="./videos.php">Vídeos</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="./sobre-Libras.php">Sobre Libras</a></li>
+                        <li><a href="./legislacao.php">Legislação</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Institucional</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="./legislacao.php">Legislação</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                        <li><a href="./fale-conosco.php">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 LIBRAS.info. Todos os direitos reservados.</p>
+                <div class="footer-legal"><a href="#">Termos de Uso</a><a href="#">Privacidade</a></div>
+            </div>
+        </div>
+    </footer>
+    <div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>window.addEventListener('scroll',()=>{document.querySelector('.custom-navbar').classList.toggle('rolando',window.scrollY>50);});</script>
 </body>
 </html>

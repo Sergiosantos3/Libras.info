@@ -1,375 +1,362 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco - Libras</title>
+    <title>Fale Conosco - LIBRAS.info</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/sectioncategorias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fale_conosco.css">
 </head>
-
 <body>
-    <a href="./index.php" class="btn btn-back" style="background-color: var(--pink); color: white;">
-        <i class="bi bi-arrow-left me-2"></i>Voltar
-    </a>
 
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <div class="icon-wrapper bg-pink mb-3" style="width: 100px; height: 100px; margin: 0 auto;">
-                <i class="bi bi-envelope fs-1 text-white"></i>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.php">
+                <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+                <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.php#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#sinais">Sinais</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./fale-conosco.php">Fale Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./videos.php">Vídeos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.php#sobre">Sobre</a></li>
+                </ul>
+                <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
             </div>
-            <h1 class="display-4 fw-bold text-pink">Fale Conosco</h1>
-            <p class="lead text-muted">Entre em contato com nossa equipe</p>
+        </div>
+    </nav>
+    <a href="./index.php" class="btn-voltar"><i class="bi bi-arrow-left"></i> Voltar</a>
+
+    <!-- Hero -->
+    <section class="pagina-hero">
+        <div class="container">
+            <div class="text-center fade-up">
+                <div class="hero-icone-circulo"><i class="bi bi-envelope-fill"></i></div>
+                <div class="hero-eyebrow"><i class="bi bi-send-fill"></i> Fale com a equipe</div>
+                <h1>Fale <span class="gradiente">Conosco</span></h1>
+                <p class="lead mx-auto">Entre em contato com nossa equipe — respondemos em até 24 horas úteis</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container pb-5">
+
+        <!-- Diferenciais rápidos -->
+        <div class="row g-3 mb-5 fade-up-2">
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:24px;">
+                        <i class="bi bi-lightning-fill d-block mb-2" style="font-size:1.8rem;color:var(--destaque);"></i>
+                        <h5>Resposta Rápida</h5>
+                        <p>Respondemos todas as mensagens em até 24 horas úteis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:24px;">
+                        <i class="bi bi-shield-check d-block mb-2" style="font-size:1.8rem;color:var(--destaque);"></i>
+                        <h5>Privacidade</h5>
+                        <p>Seus dados são protegidos e utilizados apenas para contato</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-escuro text-center">
+                    <div class="card-body" style="padding:24px;">
+                        <i class="bi bi-camera-video-fill d-block mb-2" style="font-size:1.8rem;color:var(--destaque);"></i>
+                        <h5>Acessibilidade</h5>
+                        <p>Atendimento disponível em Libras via videochamada</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- Formulário + Info -->
         <div class="row g-4">
-            <!-- Formulário de Contato -->
+
+            <!-- ── FORMULÁRIO ── -->
             <div class="col-lg-8">
-                <div class="contact-form">
-                    <h3 class="text-pink fw-bold mb-4">
-                        <i class="bi bi-chat-left-text-fill me-2"></i>Envie sua Mensagem
-                    </h3>
+                <div class="bloco-info" style="padding:36px;">
+                    <h2 style="margin-bottom:28px;"><i class="bi bi-chat-left-text-fill"></i> Envie sua Mensagem</h2>
 
                     <form id="contactForm">
                         <div class="row g-3">
+
                             <div class="col-md-6">
-                                <label for="nome" class="form-label fw-semibold">Nome Completo *</label>
-                                <input type="text" class="form-control" id="nome" required
-                                    placeholder="Seu nome completo">
+                                <label class="form-label-dark">Nome Completo *</label>
+                                <input type="text" class="form-control form-control-dark" placeholder="Seu nome completo" required>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="email" class="form-label fw-semibold">E-mail *</label>
-                                <input type="email" class="form-control" id="email" required
-                                    placeholder="seu@email.com">
+                                <label class="form-label-dark">E-mail *</label>
+                                <input type="email" class="form-control form-control-dark" placeholder="seu@email.com" required>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="telefone" class="form-label fw-semibold">Telefone</label>
-                                <input type="tel" class="form-control" id="telefone"
-                                    placeholder="(00) 00000-0000">
+                                <label class="form-label-dark">Telefone</label>
+                                <input type="tel" class="form-control form-control-dark" placeholder="(00) 00000-0000">
                             </div>
 
                             <div class="col-md-6">
-                                <label for="assunto" class="form-label fw-semibold">Assunto *</label>
-                                <select class="form-select" id="assunto" required>
+                                <label class="form-label-dark">Assunto *</label>
+                                <select class="form-select form-select-dark" required>
                                     <option value="">Selecione um assunto</option>
-                                    <option value="duvida">Dúvida sobre Libras</option>
-                                    <option value="sugestao">Sugestão</option>
-                                    <option value="elogio">Elogio</option>
-                                    <option value="reclamacao">Reclamação</option>
-                                    <option value="parceria">Proposta de Parceria</option>
-                                    <option value="outro">Outro</option>
+                                    <option>Dúvida sobre Libras</option>
+                                    <option>Sugestão</option>
+                                    <option>Elogio</option>
+                                    <option>Reclamação</option>
+                                    <option>Proposta de Parceria</option>
+                                    <option>Outro</option>
                                 </select>
                             </div>
 
                             <div class="col-12">
-                                <label for="mensagem" class="form-label fw-semibold">Mensagem *</label>
-                                <textarea class="form-control" id="mensagem" rows="6" required
-                                    placeholder="Digite sua mensagem aqui..."></textarea>
+                                <label class="form-label-dark">Mensagem *</label>
+                                <textarea class="form-control form-control-dark" rows="6"
+                                    placeholder="Digite sua mensagem aqui..." required></textarea>
                             </div>
 
                             <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="aceiteTermos" required>
-                                    <label class="form-check-label" for="aceiteTermos">
-                                        Concordo com a <a href="#" class="text-pink">Política de Privacidade</a> e
-                                        autorizo o uso dos meus dados para resposta. *
+                                <div class="d-flex align-items-start gap-2">
+                                    <input class="form-check-input form-check-input-dark mt-1" type="checkbox" required id="aceite">
+                                    <label class="form-label-dark mb-0" for="aceite" style="font-weight:400;font-size:.85rem;">
+                                        Concordo com a <a href="#" style="color:var(--destaque);">Política de Privacidade</a> e autorizo o uso dos meus dados para resposta. *
                                     </label>
                                 </div>
                             </div>
 
                             <div class="col-12">
-                                <button type="submit" class="btn btn-pink btn-submit w-100">
-                                    <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                                <button type="submit" class="btn-enviar">
+                                    <i class="bi bi-send-fill"></i> Enviar Mensagem
                                 </button>
                             </div>
 
                             <div class="col-12">
-                                <small class="text-muted">* Campos obrigatórios</small>
+                                <small style="color:#576677;">* Campos obrigatórios</small>
                             </div>
                         </div>
                     </form>
 
-                    <div id="successMessage" class="alert alert-success mt-4 d-none" role="alert">
+                    <!-- Mensagem de sucesso (oculta por padrão) -->
+                    <div id="successMessage" class="alerta-sucesso mt-4" style="display:none;">
                         <i class="bi bi-check-circle-fill me-2"></i>
                         <strong>Mensagem enviada com sucesso!</strong> Entraremos em contato em breve.
                     </div>
                 </div>
             </div>
 
-            <!-- Informações de Contato -->
+            <!-- ── INFORMAÇÕES DE CONTATO ── -->
             <div class="col-lg-4">
-                <div class="card border-0 shadow-sm mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title text-pink fw-bold mb-4">
-                            <i class="bi bi-info-circle-fill me-2"></i>Informações de Contato
-                        </h5>
 
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="bi bi-envelope-fill text-pink fs-5 me-3"></i>
-                            <div>
-                                <h6 class="fw-bold mb-1">E-mail</h6>
-                                <a href="mailto:contato@libras.edu.br" class="text-decoration-none">
-                                    contato@libras.edu.br
-                                </a>
-                            </div>
-                        </div>
+                <!-- Dados de contato -->
+                <div class="info-contato-card mb-4">
+                    <h5><i class="bi bi-info-circle-fill"></i> Informações de Contato</h5>
 
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="bi bi-telephone-fill text-pink fs-5 me-3"></i>
-                            <div>
-                                <h6 class="fw-bold mb-1">Telefone</h6>
-                                <p class="mb-0">(11) 1234-5678</p>
-                                <small class="text-muted">Seg a Sex, 8h às 18h</small>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="bi bi-whatsapp text-pink fs-5 me-3"></i>
-                            <div>
-                                <h6 class="fw-bold mb-1">WhatsApp</h6>
-                                <a href="https://wa.me/5511123456789" target="_blank" class="text-decoration-none">
-                                    (11) 91234-5678
-                                </a>
-                                <br>
-                                <small class="text-muted">Atendimento com vídeo em Libras</small>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-start">
-                            <i class="bi bi-geo-alt-fill text-pink fs-5 me-3"></i>
-                            <div>
-                                <h6 class="fw-bold mb-1">Endereço</h6>
-                                <p class="mb-0">
-                                    Rua da Inclusão, 123<br>
-                                    Centro - São Paulo/SP<br>
-                                    CEP: 01234-567
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card border-0 shadow-sm mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title text-pink fw-bold mb-4">
-                            <i class="bi bi-clock-fill me-2"></i>Horário de Atendimento
-                        </h5>
-
-                        <div class="mb-2">
-                            <strong>Segunda a Sexta:</strong><br>
-                            8h às 12h | 13h às 18h
-                        </div>
-
-                        <div class="mb-2">
-                            <strong>Sábado:</strong><br>
-                            9h às 13h
-                        </div>
-
+                    <div class="info-item">
+                        <div class="info-item-icone"><i class="bi bi-envelope-fill"></i></div>
                         <div>
-                            <strong>Domingo:</strong><br>
-                            Fechado
+                            <h6>E-mail</h6>
+                            <a href="/cdn-cgi/l/email-protection#43202c2d3722372c032f2a213122306d2a2d252c"><span class="__cf_email__" data-cfemail="9efdf1f0eaffeaf1def2f7fcecffedb0f7f0f8f1">[email&#160;protected]</span></a>
                         </div>
+                    </div>
 
-                        <div class="alert alert-info mt-3 mb-0" role="alert">
-                            <small>
-                                <i class="bi bi-info-circle me-1"></i>
-                                Atendimento em Libras disponível via videochamada
-                            </small>
+                    <div class="info-item">
+                        <div class="info-item-icone"><i class="bi bi-telephone-fill"></i></div>
+                        <div>
+                            <h6>Telefone</h6>
+                            <p>(11) 1234-5678</p>
+                            <small>Seg a Sex, 8h às 18h</small>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-item-icone"><i class="bi bi-whatsapp"></i></div>
+                        <div>
+                            <h6>WhatsApp</h6>
+                            <a href="https://wa.me/5511912345678" target="_blank">(11) 91234-5678</a>
+                            <br><small>Atendimento com vídeo em Libras</small>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-item-icone"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <h6>Endereço</h6>
+                            <p>Rua da Inclusão, 123<br>Centro — São Paulo/SP<br>CEP: 01234-567</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, var(--pink) 0%, #f472b6 100%);">
-                    <div class="card-body text-white">
-                        <h5 class="card-title fw-bold mb-3">
-                            <i class="bi bi-share-fill me-2"></i>Redes Sociais
-                        </h5>
-
-                        <div class="d-flex gap-3 mb-3">
-                            <a href="#" class="btn btn-light btn-sm" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="bi bi-facebook text-pink fs-5"></i>
-                            </a>
-                            <a href="#" class="btn btn-light btn-sm" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="bi bi-instagram text-pink fs-5"></i>
-                            </a>
-                            <a href="#" class="btn btn-light btn-sm" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="bi bi-youtube text-pink fs-5"></i>
-                            </a>
-                            <a href="#" class="btn btn-light btn-sm" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="bi bi-tiktok text-pink fs-5"></i>
-                            </a>
+                <!-- Horário -->
+                <div class="info-contato-card mb-4">
+                    <h5><i class="bi bi-clock-fill"></i> Horário de Atendimento</h5>
+                    <div class="info-item" style="flex-direction:column;gap:10px;">
+                        <div>
+                            <h6 style="margin-bottom:2px;">Segunda a Sexta</h6>
+                            <p>8h às 12h | 13h às 18h</p>
                         </div>
-
-                        <p class="mb-0 small">
-                            Siga-nos nas redes sociais para conteúdo diário sobre Libras!
-                        </p>
+                        <div>
+                            <h6 style="margin-bottom:2px;">Sábado</h6>
+                            <p>9h às 13h</p>
+                        </div>
+                        <div>
+                            <h6 style="margin-bottom:2px;">Domingo</h6>
+                            <p>Fechado</p>
+                        </div>
+                    </div>
+                    <div class="alerta-info mt-3" style="padding:12px 16px;font-size:.82rem;">
+                        <i class="bi bi-camera-video-fill me-2"></i>
+                        Atendimento em Libras disponível via videochamada
                     </div>
                 </div>
+
+                <!-- Redes sociais -->
+                <div class="banner-social">
+                    <h5><i class="bi bi-share-fill me-2"></i>Redes Sociais</h5>
+                    <div class="d-flex gap-2 mb-3">
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                    <p style="font-size:.82rem;color:var(--texto-sec);margin:0;">Siga-nos para conteúdo diário sobre Libras!</p>
+                </div>
+
             </div>
+        </div><!-- /row formulário + info -->
+
+        <!-- FAQ -->
+        <div class="separador-secao">
+            <span class="separador-secao-texto"><i class="bi bi-question-circle-fill"></i> Perguntas Frequentes</span>
+            <div class="separador-secao-linha"></div>
         </div>
 
-        <div class="info-section mt-5">
-            <h2><i class="bi bi-question-circle-fill text-pink me-2"></i>Perguntas Frequentes</h2>
-
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                            Como posso aprender Libras?
-                        </button>
-                    </h2>
-                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Você pode começar pelos nossos vídeos educativos disponíveis na seção "Vídeos".
-                            Recomendamos também cursos presenciais ou online com professores surdos certificados.
-                            Entre em contato conosco para indicações de cursos na sua região.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                            Quanto tempo leva para aprender Libras?
-                        </button>
-                    </h2>
-                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            O tempo varia de pessoa para pessoa. Para conversação básica, geralmente 6 meses
-                            de estudo regular são suficientes. Para fluência intermediária, conte com 1 a 2 anos
-                            de prática constante. A imersão com a comunidade surda acelera muito o aprendizado.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                            Vocês oferecem certificados?
-                        </button>
-                    </h2>
-                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Atualmente, somos uma plataforma educativa. Para certificados oficiais, recomendamos
-                            cursos reconhecidos pelo MEC ou pelo PROLIBRAS (Exame Nacional de Proficiência em Libras).
-                            Entre em contato para informações sobre instituições certificadoras.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                            Como posso contribuir com o projeto?
-                        </button>
-                    </h2>
-                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Adoraríamos contar com sua contribuição! Você pode: compartilhar nosso conteúdo,
-                            sugerir melhorias, enviar materiais educativos, ou entrar em contato para discutir
-                            parcerias. Toda ajuda é bem-vinda para difundir o conhecimento sobre Libras.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                            Posso usar o conteúdo do site para fins educacionais?
-                        </button>
-                    </h2>
-                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Sim! Todo nosso conteúdo pode ser usado para fins educacionais não comerciais.
-                            Pedimos apenas que cite a fonte. Para uso comercial ou em grande escala,
-                            entre em contato conosco para obter autorização.
-                        </div>
-                    </div>
+        <div class="accordion accordion-escuro" id="faqAccordion">
+                        <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq0">
+                        Como posso aprender Libras?                    </button>
+                </h2>
+                <div id="faq0" class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Comece pelos nossos vídeos educativos na seção "Vídeos". Recomendamos também cursos presenciais ou online com professores surdos certificados. Entre em contato para indicações de cursos na sua região.</div>
                 </div>
             </div>
-        </div>
-
-        <div class="row g-4 mt-4">
-            <div class="col-md-4">
-                <div class="card border-0 bg-light text-center h-100">
-                    <div class="card-body">
-                        <i class="bi bi-lightning-fill text-pink fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Resposta Rápida</h5>
-                        <p class="text-muted mb-0">
-                            Respondemos todas as mensagens em até 24 horas úteis
-                        </p>
-                    </div>
+                        <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Quanto tempo leva para aprender Libras?                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse "
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">O tempo varia de pessoa para pessoa. Para conversação básica, geralmente 6 meses de estudo regular são suficientes. Para fluência intermediária, conte com 1 a 2 anos de prática constante. A imersão com a comunidade surda acelera muito o aprendizado.</div>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card border-0 bg-light text-center h-100">
-                    <div class="card-body">
-                        <i class="bi bi-shield-check text-pink fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Privacidade</h5>
-                        <p class="text-muted mb-0">
-                            Seus dados são protegidos e utilizados apenas para contato
-                        </p>
-                    </div>
+                        <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Vocês oferecem certificados?                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse "
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Atualmente somos uma plataforma educativa. Para certificados oficiais, recomendamos cursos reconhecidos pelo MEC ou pelo PROLIBRAS (Exame Nacional de Proficiência em Libras). Entre em contato para informações sobre instituições certificadoras.</div>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card border-0 bg-light text-center h-100">
-                    <div class="card-body">
-                        <i class="bi bi-hand-thumbs-up-fill text-pink fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Acessibilidade</h5>
-                        <p class="text-muted mb-0">
-                            Atendimento disponível em Libras via videochamada
-                        </p>
-                    </div>
+                        <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                        Como posso contribuir com o projeto?                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse "
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Adoraríamos contar com sua contribuição! Você pode: compartilhar nosso conteúdo, sugerir melhorias, enviar materiais educativos ou entrar em contato para discutir parcerias. Toda ajuda é bem-vinda para difundir o conhecimento sobre Libras.</div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+                        <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                        Posso usar o conteúdo para fins educacionais?                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse "
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Sim! Todo nosso conteúdo pode ser usado para fins educacionais não comerciais. Pedimos apenas que cite a fonte. Para uso comercial ou em grande escala, entre em contato conosco para obter autorização.</div>
+                </div>
+            </div>
+                    </div>
+
     </div>
 
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="./index.php" class="footer-brand">
+                        <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+                        <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
+                    </a>
+                    <p class="footer-description">Conectando pessoas através da Língua Brasileira de Sinais.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Aprender</h5>
+                    <ul class="footer-links">
+                        <li><a href="./alfabeto.php">Alfabeto</a></li>
+                        <li><a href="./numeros.php">Números</a></li>
+                        <li><a href="./cumprimentos.php">Cumprimentos</a></li>
+                        <li><a href="./familia.php">Família</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Recursos</h5>
+                    <ul class="footer-links">
+                        <li><a href="./videos.php">Vídeos</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="./sobre-Libras.php">Sobre Libras</a></li>
+                        <li><a href="./legislacao.php">Legislação</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Institucional</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="./legislacao.php">Legislação</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                        <li><a href="./fale-conosco.php">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 LIBRAS.info. Todos os direitos reservados.</p>
+                <div class="footer-legal"><a href="#">Termos de Uso</a><a href="#">Privacidade</a></div>
+            </div>
+        </div>
+    </footer>
 
+    <div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Simulação de envio de formulário
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Validação básica
-            if (this.checkValidity()) {
-                // Mostrar mensagem de sucesso
-                document.getElementById('successMessage').classList.remove('d-none');
-
-                // Limpar formulário
-                this.reset();
-
-                // Scroll para mensagem de sucesso
-                document.getElementById('successMessage').scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'center'
-                });
-
-                // Esconder mensagem após 5 segundos
-                setTimeout(function() {
-                    document.getElementById('successMessage').classList.add('d-none');
-                }, 5000);
-            }
+        window.addEventListener('scroll',()=>{
+            document.querySelector('.custom-navbar').classList.toggle('rolando',window.scrollY>50);
         });
-    </script>
-</body>
-
-</html>
