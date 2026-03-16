@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,6 +42,25 @@
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+    <script>
+         // Toggle senha (olho)
+            $(".toggle-pass").click(function() {
+                const targetId = $(this).data("target");
+                const input = $("#" + targetId);
+                const icon = $(this).find("i");
+
+                if (input.attr("type") === "password") {
+                    input.attr("type", "text");
+                    icon.removeClass("bi-eye").addClass("bi-eye-slash");
+                } else {
+                    input.attr("type", "password");
+                    icon.removeClass("bi-eye-slash").addClass("bi-eye");
+                }
+            });
+    </script>
+    
+     <?php include_once './includes/alerts_includes.php'; ?>
 
 </body>
 </html>

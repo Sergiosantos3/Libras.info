@@ -43,14 +43,16 @@ session_start();
                 </ul>
                 <?php if (isset($_SESSION['usuario'])): ?>
                     <div class="dropdown">
-                        <button class="btn btn-secondary" style="background: transparent; color: hsla(0, 0%, 100%, 0.8);" type="button" id="dropdownMenu2" data-bs-toggle="dropdown">
-                            Home
+                        <button class="btn btn-accent dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle me-1"></i> Minha Conta
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Perfil</a></li>
-                            <li><a class="dropdown-item" href="#">Configurações</a></li>
-                            <hr>
-                            <li><a class="dropdown-item" href="./admin/sair.php">Sair</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="./perfil.php"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="./perfil.php#configuracoes"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="./admin/sair.php"><i class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
                         </ul>
                     </div>
                 <?php else: ?>
@@ -273,7 +275,7 @@ session_start();
                                 <span><i class="bi bi-clock"></i> 12+ Horas</span>
                             </div>
                             <a href="https://www.youtube.com/watch?v=7yepxfXKF4M&list=PLFdaWy6_jmiwYgI7iM4_ltkg35VaFqPps">
-                                <button class="btn btn-secondary w-100" >Começar Curso</button>
+                                <button class="btn btn-secondary w-100">Começar Curso</button>
                             </a>
                         </div>
                     </div>
@@ -397,20 +399,24 @@ session_start();
     <!-- VLibras -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         /* ── Alfabeto inline ── */
-        const buttons     = document.querySelectorAll('.alphabet-letter');
-        const display     = document.getElementById('letterDisplay');
+        const buttons = document.querySelectorAll('.alphabet-letter');
+        const display = document.getElementById('letterDisplay');
         const letterImage = document.getElementById('letterImage');
-        const letterText  = document.getElementById('letterText');
+        const letterText = document.getElementById('letterText');
 
         buttons.forEach(button => {
             button.addEventListener('click', () => {
@@ -429,18 +435,21 @@ session_start();
         });
 
         /* ── Navbar scroll ── */
-        window.addEventListener('scroll', function () {
+        window.addEventListener('scroll', function() {
             document.querySelector('.custom-navbar').classList.toggle('scrolled', window.scrollY > 50);
         });
 
         /* ── Smooth scroll ── */
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+                document.querySelector(this.getAttribute('href'))?.scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
 
 </body>
+
 </html>

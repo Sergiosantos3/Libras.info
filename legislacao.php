@@ -1,5 +1,9 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +13,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/legislacao.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.php">
-                <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <div class="brand-icon">
+                    <i class="bi bi-hand-index"></i>
+                </div>
                 <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.php#inicio">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.php#sinais">Sinais</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Legislação</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./videos.php">Vídeos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.php#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sinais">Sinais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#alfabeto">Alfabeto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobre-nos.php">Sobre</a></li>
                 </ul>
-                <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
+                <?php if (isset($_SESSION['usuario'])): ?>
+                    <div class="dropdown">
+                        <button class="btn btn-accent dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle me-1"></i> Minha Conta
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="./perfil.php"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="./perfil.php#configuracoes"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="./admin/sair.php"><i class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
+                        </ul>
+                    </div>
+                <?php else: ?>
+                    <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
+                <?php endif; ?>
             </div>
         </div>
     </nav>
@@ -146,145 +173,161 @@
         </div>
 
         <div class="row g-4">
-                        <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="card-escuro">
                     <div class="card-cabecalho card-cab-destaque">
-                        <i class="bi bi-mortarboard-fill"></i> Educação                    </div>
+                        <i class="bi bi-mortarboard-fill"></i> Educação
+                    </div>
                     <div class="card-body">
                         <ul style="padding-left:18px;margin:0;">
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Educação bilíngue: Libras + português escrito</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Intérprete de Libras em sala de aula</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Material didático acessível</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Escolas bilíngues para surdos</li>
-                                                    </ul>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Educação bilíngue: Libras + português escrito</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Intérprete de Libras em sala de aula</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Material didático acessível</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Escolas bilíngues para surdos</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="card-escuro">
                     <div class="card-cabecalho card-cab-destaque">
-                        <i class="bi bi-hospital-fill"></i> Saúde                    </div>
+                        <i class="bi bi-hospital-fill"></i> Saúde
+                    </div>
                     <div class="card-body">
                         <ul style="padding-left:18px;margin:0;">
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Atendimento com intérprete em hospitais</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Informações sobre tratamentos em Libras</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Profissionais capacitados para surdos</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Acompanhante intérprete em consultas</li>
-                                                    </ul>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Atendimento com intérprete em hospitais</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Informações sobre tratamentos em Libras</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Profissionais capacitados para surdos</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Acompanhante intérprete em consultas</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="card-escuro">
                     <div class="card-cabecalho card-cab-destaque">
-                        <i class="bi bi-briefcase-fill"></i> Trabalho                    </div>
+                        <i class="bi bi-briefcase-fill"></i> Trabalho
+                    </div>
                     <div class="card-body">
                         <ul style="padding-left:18px;margin:0;">
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Intérprete em entrevistas de emprego</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Proibição de discriminação</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Adaptações no ambiente de trabalho</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Comunicação acessível com colegas</li>
-                                                    </ul>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Intérprete em entrevistas de emprego</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Proibição de discriminação</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Adaptações no ambiente de trabalho</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Comunicação acessível com colegas</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="card-escuro">
                     <div class="card-cabecalho card-cab-destaque">
-                        <i class="bi bi-tv-fill"></i> Comunicação e Mídia                    </div>
+                        <i class="bi bi-tv-fill"></i> Comunicação e Mídia
+                    </div>
                     <div class="card-body">
                         <ul style="padding-left:18px;margin:0;">
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Janela de Libras em programas de TV</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Legendas em conteúdos audiovisuais</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Sites governamentais em Libras</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Acessibilidade em propagandas eleitorais</li>
-                                                    </ul>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Janela de Libras em programas de TV</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Legendas em conteúdos audiovisuais</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Sites governamentais em Libras</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Acessibilidade em propagandas eleitorais</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="card-escuro">
                     <div class="card-cabecalho card-cab-destaque">
-                        <i class="bi bi-bank2"></i> Serviços Públicos                    </div>
+                        <i class="bi bi-bank2"></i> Serviços Públicos
+                    </div>
                     <div class="card-body">
                         <ul style="padding-left:18px;margin:0;">
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Intérprete em repartições públicas</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Atendimento acessível em bancos</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Informações em Libras sobre serviços</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Acessibilidade em processos judiciais</li>
-                                                    </ul>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Intérprete em repartições públicas</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Atendimento acessível em bancos</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Informações em Libras sobre serviços</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Acessibilidade em processos judiciais</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="card-escuro">
                     <div class="card-cabecalho card-cab-destaque">
-                        <i class="bi bi-shield-check"></i> Justiça                    </div>
+                        <i class="bi bi-shield-check"></i> Justiça
+                    </div>
                     <div class="card-body">
                         <ul style="padding-left:18px;margin:0;">
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Intérprete em audiências</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Direito a depoimento em Libras</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Documentos judiciais acessíveis</li>
-                                                        <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Igualdade de tratamento perante a lei</li>
-                                                    </ul>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Intérprete em audiências</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Direito a depoimento em Libras</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Documentos judiciais acessíveis</li>
+                            <li style="color:var(--texto-sec);font-size:.84rem;margin-bottom:5px;">Igualdade de tratamento perante a lei</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-                    </div>
+        </div>
 
         <!-- Violação de direitos -->
+        <!-- O que fazer em caso de violação -->
         <div class="separador-secao">
             <span class="separador-secao-texto"><i class="bi bi-exclamation-triangle-fill"></i> O que fazer em caso de violação?</span>
             <div class="separador-secao-linha"></div>
         </div>
 
         <div class="accordion accordion-escuro" id="violationAccordion">
-                        <div class="accordion-item">
+            <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#step1">
-                        1. Documente a Situação                    </button>
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step1" aria-expanded="true">
+                        <i class="bi bi-1-circle-fill me-2" style="color:var(--destaque)"></i> Documente a Situação
+                    </button>
                 </h2>
                 <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#violationAccordion">
                     <div class="accordion-body">Registre detalhes: data, local, pessoas envolvidas e o que aconteceu. Se possível, tire fotos ou vídeos e consiga testemunhas.</div>
                 </div>
             </div>
-                        <div class="accordion-item">
+            <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step2">
-                        2. Tente Resolver Diretamente                    </button>
+                        <i class="bi bi-2-circle-fill me-2" style="color:var(--destaque)"></i> Tente Resolver Diretamente
+                    </button>
                 </h2>
-                <div id="step2" class="accordion-collapse collapse " data-bs-parent="#violationAccordion">
+                <div id="step2" class="accordion-collapse collapse" data-bs-parent="#violationAccordion">
                     <div class="accordion-body">Converse com o responsável pelo estabelecimento. Muitas vezes a situação pode ser resolvida pelo diálogo e conscientização.</div>
                 </div>
             </div>
-                        <div class="accordion-item">
+            <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step3">
-                        3. Registre uma Reclamação Formal                    </button>
+                        <i class="bi bi-3-circle-fill me-2" style="color:var(--destaque)"></i> Registre uma Reclamação Formal
+                    </button>
                 </h2>
-                <div id="step3" class="accordion-collapse collapse " data-bs-parent="#violationAccordion">
-                    <div class="accordion-body"><strong style="color:#fff">Ouvidoria:</strong> do órgão ou empresa. <strong style="color:#fff">Procon:</strong> para estabelecimentos comerciais. <strong style="color:#fff">Ministério Público:</strong> para casos graves.</div>
+                <div id="step3" class="accordion-collapse collapse" data-bs-parent="#violationAccordion">
+                    <div class="accordion-body">
+                        <strong style="color:#fff">Ouvidoria:</strong> do órgão ou empresa. &nbsp;
+                        <strong style="color:#fff">Procon:</strong> para estabelecimentos comerciais. &nbsp;
+                        <strong style="color:#fff">Ministério Público:</strong> para casos graves.
+                    </div>
                 </div>
             </div>
-                        <div class="accordion-item">
+            <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step4">
-                        4. Busque Apoio de Organizações                    </button>
+                        <i class="bi bi-4-circle-fill me-2" style="color:var(--destaque)"></i> Busque Apoio de Organizações
+                    </button>
                 </h2>
-                <div id="step4" class="accordion-collapse collapse " data-bs-parent="#violationAccordion">
+                <div id="step4" class="accordion-collapse collapse" data-bs-parent="#violationAccordion">
                     <div class="accordion-body">FENEIS (Federação Nacional de Educação e Integração dos Surdos), associações locais de surdos, conselhos de direitos da pessoa com deficiência.</div>
                 </div>
             </div>
-                        <div class="accordion-item">
+            <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step5">
-                        5. Acione a Justiça                    </button>
+                        <i class="bi bi-5-circle-fill me-2" style="color:var(--destaque)"></i> Acione a Justiça
+                    </button>
                 </h2>
-                <div id="step5" class="accordion-collapse collapse " data-bs-parent="#violationAccordion">
+                <div id="step5" class="accordion-collapse collapse" data-bs-parent="#violationAccordion">
                     <div class="accordion-body">Se as medidas anteriores não resolverem, procure um advogado ou a Defensoria Pública para entrar com ação judicial.</div>
                 </div>
             </div>
-                    </div>
+        </div>
 
         <!-- Canais de denúncia -->
         <div class="separador-secao">
@@ -293,7 +336,7 @@
         </div>
 
         <div class="row g-3">
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card-escuro">
                     <div class="card-body">
                         <h5 style="color:var(--destaque);font-size:.9rem;">Disque 100</h5>
@@ -303,7 +346,7 @@
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card-escuro">
                     <div class="card-body">
                         <h5 style="color:var(--destaque);font-size:.9rem;">Ministério Público Federal</h5>
@@ -313,7 +356,7 @@
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card-escuro">
                     <div class="card-body">
                         <h5 style="color:var(--destaque);font-size:.9rem;">Defensoria Pública</h5>
@@ -323,7 +366,7 @@
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card-escuro">
                     <div class="card-body">
                         <h5 style="color:var(--destaque);font-size:.9rem;">FENEIS</h5>
@@ -333,7 +376,7 @@
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card-escuro">
                     <div class="card-body">
                         <h5 style="color:var(--destaque);font-size:.9rem;">Procon</h5>
@@ -343,7 +386,7 @@
                     </div>
                 </div>
             </div>
-                        <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card-escuro">
                     <div class="card-body">
                         <h5 style="color:var(--destaque);font-size:.9rem;">Conselho de Defesa</h5>
@@ -353,7 +396,7 @@
                     </div>
                 </div>
             </div>
-                    </div>
+        </div>
 
         <div class="alerta-info mt-4">
             <i class="bi bi-info-circle-fill me-2"></i>
@@ -412,10 +455,22 @@
             </div>
         </div>
     </footer>
-    <div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>window.addEventListener('scroll',()=>{document.querySelector('.custom-navbar').classList.toggle('rolando',window.scrollY>50);});</script>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.custom-navbar').classList.toggle('rolando', window.scrollY > 50);
+        });
+    </script>
 </body>
+
 </html>

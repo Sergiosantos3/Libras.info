@@ -1,5 +1,9 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,27 +18,48 @@
     <!-- CSS da página de vídeos -->
     <link rel="stylesheet" href="./css/videos.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.php">
-                <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <div class="brand-icon">
+                    <i class="bi bi-hand-index"></i>
+                </div>
                 <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.php#inicio">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.php#sinais">Sinais</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.php#alfabeto">Alfabeto</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./videos.php">Vídeos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.php#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sinais">Sinais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#alfabeto">Alfabeto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobre-nos.php">Sobre</a></li>
                 </ul>
-                <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
+                <?php if (isset($_SESSION['usuario'])): ?>
+                    <div class="dropdown">
+                        <button class="btn btn-accent dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle me-1"></i> Minha Conta
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="./perfil.php"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="./perfil.php#configuracoes"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="./admin/sair.php"><i class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
+                        </ul>
+                    </div>
+                <?php else: ?>
+                    <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
+                <?php endif; ?>
             </div>
         </div>
     </nav>
@@ -501,12 +526,12 @@
                         <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
                     </a>
                     <p class="footer-description">Conectando pessoas através da Língua Brasileira de Sinais.</p>
-                    <div class="social-links">
+                    <!-- <div class="social-links">
                         <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <h5 class="footer-title">Aprender</h5>
@@ -549,10 +574,14 @@
     <!-- VLibras -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -564,8 +593,8 @@
         });
 
         /* ── Filtro de nível dos vídeos ── */
-        const abas   = document.querySelectorAll('.filter-tab');
-        const cards  = document.querySelectorAll('[data-level]');
+        const abas = document.querySelectorAll('.filter-tab');
+        const cards = document.querySelectorAll('[data-level]');
         const grupos = document.querySelectorAll('[data-group]');
 
         abas.forEach(aba => {
@@ -583,7 +612,7 @@
 
                 /* Mostra ou esconde os cabeçalhos e grids de cada seção */
                 grupos.forEach(grupo => {
-                    const grp     = grupo.dataset.group;
+                    const grp = grupo.dataset.group;
                     const visivel = filtro === 'all' || filtro === grp;
                     grupo.style.display = visivel ? '' : 'none';
 
@@ -595,4 +624,5 @@
     </script>
 
 </body>
+
 </html>

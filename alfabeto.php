@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,28 +11,50 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/alfabeto.css">
+    <link rel="stylesheet" href=".css/index.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.php">
-                <div class="brand-icon"><i class="bi bi-hand-index"></i></div>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
+                <div class="brand-icon">
+                    <i class="bi bi-hand-index"></i>
+                </div>
                 <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.php#inicio">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.php#sinais">Sinais</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./alfabeto.php">Alfabeto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./videos.php">Vídeos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.php#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sinais">Sinais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#alfabeto">Alfabeto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobre-nos.php">Sobre</a></li>
                 </ul>
-                <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
+                <?php if (isset($_SESSION['usuario'])): ?>
+                    <div class="dropdown">
+                        <button class="btn btn-accent dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle me-1"></i> Minha Conta
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="./perfil.php"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="./perfil.php#configuracoes"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="./admin/sair.php"><i class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
+                        </ul>
+                    </div>
+                <?php else: ?>
+                    <a href="./login.php" class="btn btn-accent">Login/Cadastre-se</a>
+                <?php endif; ?>
             </div>
         </div>
     </nav>
@@ -57,111 +82,111 @@
 
         <!-- Grid do alfabeto -->
         <div class="grid-alfabeto fade-up-3" id="gridAlfabeto">
-                        <div class="letra-card" data-letra="A">
+            <div class="letra-card" data-letra="A">
                 <img src="./img/letra A.png" alt="Letra A em Libras">
                 <span>A</span>
             </div>
-                        <div class="letra-card" data-letra="B">
+            <div class="letra-card" data-letra="B">
                 <img src="./img/letra B.png" alt="Letra B em Libras">
                 <span>B</span>
             </div>
-                        <div class="letra-card" data-letra="C">
+            <div class="letra-card" data-letra="C">
                 <img src="./img/letra C.png" alt="Letra C em Libras">
                 <span>C</span>
             </div>
-                        <div class="letra-card" data-letra="D">
+            <div class="letra-card" data-letra="D">
                 <img src="./img/letra D.png" alt="Letra D em Libras">
                 <span>D</span>
             </div>
-                        <div class="letra-card" data-letra="E">
+            <div class="letra-card" data-letra="E">
                 <img src="./img/letra E.png" alt="Letra E em Libras">
                 <span>E</span>
             </div>
-                        <div class="letra-card" data-letra="F">
+            <div class="letra-card" data-letra="F">
                 <img src="./img/letra F.png" alt="Letra F em Libras">
                 <span>F</span>
             </div>
-                        <div class="letra-card" data-letra="G">
+            <div class="letra-card" data-letra="G">
                 <img src="./img/letra G.png" alt="Letra G em Libras">
                 <span>G</span>
             </div>
-                        <div class="letra-card" data-letra="H">
+            <div class="letra-card" data-letra="H">
                 <img src="./img/letra H.png" alt="Letra H em Libras">
                 <span>H</span>
             </div>
-                        <div class="letra-card" data-letra="I">
+            <div class="letra-card" data-letra="I">
                 <img src="./img/letra I.png" alt="Letra I em Libras">
                 <span>I</span>
             </div>
-                        <div class="letra-card" data-letra="J">
+            <div class="letra-card" data-letra="J">
                 <img src="./img/letra J.png" alt="Letra J em Libras">
                 <span>J</span>
             </div>
-                        <div class="letra-card" data-letra="K">
+            <div class="letra-card" data-letra="K">
                 <img src="./img/letra K.png" alt="Letra K em Libras">
                 <span>K</span>
             </div>
-                        <div class="letra-card" data-letra="L">
+            <div class="letra-card" data-letra="L">
                 <img src="./img/letra L.png" alt="Letra L em Libras">
                 <span>L</span>
             </div>
-                        <div class="letra-card" data-letra="M">
+            <div class="letra-card" data-letra="M">
                 <img src="./img/letra M.png" alt="Letra M em Libras">
                 <span>M</span>
             </div>
-                        <div class="letra-card" data-letra="N">
+            <div class="letra-card" data-letra="N">
                 <img src="./img/letra N.png" alt="Letra N em Libras">
                 <span>N</span>
             </div>
-                        <div class="letra-card" data-letra="O">
+            <div class="letra-card" data-letra="O">
                 <img src="./img/letra O.png" alt="Letra O em Libras">
                 <span>O</span>
             </div>
-                        <div class="letra-card" data-letra="P">
+            <div class="letra-card" data-letra="P">
                 <img src="./img/letra P.png" alt="Letra P em Libras">
                 <span>P</span>
             </div>
-                        <div class="letra-card" data-letra="Q">
+            <div class="letra-card" data-letra="Q">
                 <img src="./img/letra Q.png" alt="Letra Q em Libras">
                 <span>Q</span>
             </div>
-                        <div class="letra-card" data-letra="R">
+            <div class="letra-card" data-letra="R">
                 <img src="./img/letra R.png" alt="Letra R em Libras">
                 <span>R</span>
             </div>
-                        <div class="letra-card" data-letra="S">
+            <div class="letra-card" data-letra="S">
                 <img src="./img/letra S.png" alt="Letra S em Libras">
                 <span>S</span>
             </div>
-                        <div class="letra-card" data-letra="T">
+            <div class="letra-card" data-letra="T">
                 <img src="./img/letra T.png" alt="Letra T em Libras">
                 <span>T</span>
             </div>
-                        <div class="letra-card" data-letra="U">
+            <div class="letra-card" data-letra="U">
                 <img src="./img/letra U.png" alt="Letra U em Libras">
                 <span>U</span>
             </div>
-                        <div class="letra-card" data-letra="V">
+            <div class="letra-card" data-letra="V">
                 <img src="./img/letra V.png" alt="Letra V em Libras">
                 <span>V</span>
             </div>
-                        <div class="letra-card" data-letra="W">
+            <div class="letra-card" data-letra="W">
                 <img src="./img/letra W.png" alt="Letra W em Libras">
                 <span>W</span>
             </div>
-                        <div class="letra-card" data-letra="X">
+            <div class="letra-card" data-letra="X">
                 <img src="./img/letra X.png" alt="Letra X em Libras">
                 <span>X</span>
             </div>
-                        <div class="letra-card" data-letra="Y">
+            <div class="letra-card" data-letra="Y">
                 <img src="./img/letra Y.png" alt="Letra Y em Libras">
                 <span>Y</span>
             </div>
-                        <div class="letra-card" data-letra="Z">
+            <div class="letra-card" data-letra="Z">
                 <img src="./img/letra Z.png" alt="Letra Z em Libras">
                 <span>Z</span>
             </div>
-                    </div>
+        </div>
 
         <!-- Informações complementares -->
         <div class="separador-secao mt-5">
@@ -171,28 +196,36 @@
 
         <div class="row g-4">
             <div class="col-md-6">
-                <div class="card-escuro"><div class="card-body">
-                    <h5><i class="bi bi-info-circle-fill text-info me-2"></i>O que é o Alfabeto Manual?</h5>
-                    <p>O alfabeto manual (datilologia) é um conjunto de configurações de mãos que representam as letras do alfabeto. É utilizado principalmente para soletrar nomes próprios e palavras sem sinal específico em Libras.</p>
-                </div></div>
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-info-circle-fill text-info me-2"></i>O que é o Alfabeto Manual?</h5>
+                        <p>O alfabeto manual (datilologia) é um conjunto de configurações de mãos que representam as letras do alfabeto. É utilizado principalmente para soletrar nomes próprios e palavras sem sinal específico em Libras.</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
-                <div class="card-escuro"><div class="card-body">
-                    <h5><i class="bi bi-hand-index-fill text-info me-2"></i>Quando Usar?</h5>
-                    <p>Use o alfabeto manual para: soletrar nomes de pessoas e lugares, palavras técnicas sem sinal estabelecido, quando não souber o sinal de uma palavra específica, ou para ensinar a grafia de palavras.</p>
-                </div></div>
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-hand-index-fill text-info me-2"></i>Quando Usar?</h5>
+                        <p>Use o alfabeto manual para: soletrar nomes de pessoas e lugares, palavras técnicas sem sinal estabelecido, quando não souber o sinal de uma palavra específica, ou para ensinar a grafia de palavras.</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
-                <div class="card-escuro"><div class="card-body">
-                    <h5><i class="bi bi-stopwatch-fill text-info me-2"></i>Dicas de Prática</h5>
-                    <p>Pratique na frente do espelho para verificar a posição das mãos. Comece devagar e vá aumentando a velocidade. Tente soletrar palavras curtas como seu nome e nomes de pessoas próximas.</p>
-                </div></div>
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-stopwatch-fill text-info me-2"></i>Dicas de Prática</h5>
+                        <p>Pratique na frente do espelho para verificar a posição das mãos. Comece devagar e vá aumentando a velocidade. Tente soletrar palavras curtas como seu nome e nomes de pessoas próximas.</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
-                <div class="card-escuro"><div class="card-body">
-                    <h5><i class="bi bi-exclamation-triangle-fill text-info me-2"></i>Ponto de Atenção</h5>
-                    <p>O alfabeto manual não substitui a Libras — é apenas uma ferramenta complementar. Procure sempre aprender os sinais próprios de cada palavra, pois a comunicação em Libras fluente vai muito além da datilologia.</p>
-                </div></div>
+                <div class="card-escuro">
+                    <div class="card-body">
+                        <h5><i class="bi bi-exclamation-triangle-fill text-info me-2"></i>Ponto de Atenção</h5>
+                        <p>O alfabeto manual não substitui a Libras — é apenas uma ferramenta complementar. Procure sempre aprender os sinais próprios de cada palavra, pois a comunicação em Libras fluente vai muito além da datilologia.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -224,12 +257,12 @@
                         <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
                     </a>
                     <p class="footer-description">Conectando pessoas através da Língua Brasileira de Sinais.</p>
-                    <div class="social-links">
+                    <!-- <div class="social-links">
                         <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <h5 class="footer-title">Aprender</h5>
@@ -252,7 +285,7 @@
                 <div class="col-6 col-md-4 col-lg-2">
                     <h5 class="footer-title">Institucional</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="./sobre-nos.php">Sobre Nós</a></li>
                         <li><a href="./legislacao.php">Legislação</a></li>
                         <li><a href="#">Parceiros</a></li>
                         <li><a href="./fale-conosco.php">Contato</a></li>
@@ -266,25 +299,32 @@
         </div>
     </footer>
 
-    <div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        /* ── Navbar scroll ── */
+        /* Navbar scroll */
         window.addEventListener('scroll', () => {
             document.querySelector('.custom-navbar').classList.toggle('rolando', window.scrollY > 50);
         });
 
-        /* ── Painel de letra ampliada ── */
-        const letras   = Array.from(document.querySelectorAll('.letra-card'));
-        const painel   = document.getElementById('painelLetra');
-        const painelImg  = document.getElementById('painelImg');
+        /* Painel de letra ampliada */
+        const letras = Array.from(document.querySelectorAll('.letra-card'));
+        const painel = document.getElementById('painelLetra');
+        const painelImg = document.getElementById('painelImg');
         const painelNome = document.getElementById('painelNome');
-        const btnFechar  = document.getElementById('btnFechar');
+        const btnFechar = document.getElementById('btnFechar');
         const btnAnterior = document.getElementById('btnAnterior');
-        const btnProximo  = document.getElementById('btnProximo');
+        const btnProximo = document.getElementById('btnProximo');
 
         let indiceAtual = 0;
 
@@ -303,7 +343,7 @@
 
             /* Atualiza estado dos botões de navegação */
             btnAnterior.disabled = (indice === 0);
-            btnProximo.disabled  = (indice === letras.length - 1);
+            btnProximo.disabled = (indice === letras.length - 1);
 
             painel.classList.add('visivel');
             document.body.style.overflow = 'hidden';
@@ -322,8 +362,12 @@
         });
 
         /* Botões de navegação */
-        btnAnterior.addEventListener('click', () => { if (indiceAtual > 0) abrirLetra(indiceAtual - 1); });
-        btnProximo.addEventListener('click',  () => { if (indiceAtual < letras.length - 1) abrirLetra(indiceAtual + 1); });
+        btnAnterior.addEventListener('click', () => {
+            if (indiceAtual > 0) abrirLetra(indiceAtual - 1);
+        });
+        btnProximo.addEventListener('click', () => {
+            if (indiceAtual < letras.length - 1) abrirLetra(indiceAtual + 1);
+        });
 
         /* Fecha ao clicar fora do conteúdo ou no X */
         btnFechar.addEventListener('click', fecharPainel);
@@ -334,10 +378,11 @@
         /* Navegação pelo teclado */
         document.addEventListener('keydown', (e) => {
             if (!painel.classList.contains('visivel')) return;
-            if (e.key === 'Escape')      fecharPainel();
-            if (e.key === 'ArrowLeft'  && indiceAtual > 0)              abrirLetra(indiceAtual - 1);
+            if (e.key === 'Escape') fecharPainel();
+            if (e.key === 'ArrowLeft' && indiceAtual > 0) abrirLetra(indiceAtual - 1);
             if (e.key === 'ArrowRight' && indiceAtual < letras.length - 1) abrirLetra(indiceAtual + 1);
         });
     </script>
 </body>
+
 </html>

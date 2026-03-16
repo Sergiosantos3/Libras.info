@@ -7,24 +7,24 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
     if(empty($usuario->email)){
-        echo "O Usuario/Email não foi informado";
+      header('Location: ../login.php?err=email_vazio');
+        exit();
     }
     else if(empty($usuario->senha_hash)){
-        echo "A senha não foi informada";
+        header('Location: ../login.php?err=senha_vazia');
+        exit();
     }
     else{
         $resultado = $usuario->Logar();
         print_r($resultado);
         if(sizeof($resultado) != 1){
-            header('Location: ../login.php');
-            // echo 1;
+            header('Location: ../login.php?err=usuario_login_falha');
             exit();
             
         }
         else{
             //Iniciar sessão de 
             session_start();
-            //echo 2;
             //criar sessão com os dados vindo do banco de dados
             $_SESSION['usuario'] = $resultado[0];
             //redirecionar para a área padina inicial

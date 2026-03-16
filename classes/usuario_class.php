@@ -15,15 +15,14 @@ class Usuario{
 
 
     public function Cadastrar(){
-        $sql = "INSERT INTO usuarios (nome, email, senha_hash, data_cadastro, nivel_libras)
-        VALUES (?, ?, ?, ?, ?)";
-        $banco = Banco::conectar(); //conecta com o banco de dados.
+        $sql = "INSERT INTO usuarios (nome, email, senha_hash, nivel_libras)
+        VALUES (?, ?, ?, ?)";
+        $banco = Banco::conectar();
         $comando = $banco->prepare($sql);
         $comando->execute([
             $this->nome,
             $this->email,
             hash('sha256', $this->senha_hash),
-            $this->data_cadastro,
             $this->nivel_libras
         ]);
         Banco::desconectar();
@@ -43,5 +42,18 @@ class Usuario{
         Banco::desconectar();
         return $resultado;
     }
+
+    public function TrocarSenha(){
+        $sql = "UPDATE usuarios SET senha_hash = ? WHERE id = ?";
+        $banco = Banco::conectar();
+        $comando = $banco->prepare($sql);
+        $comando->execute([
+            hash('sha256', $this->senha_hash),
+            $this->id
+        ]);
+        Banco::desconectar();
+        return $comando->rowCount();
+    }
+
 }
 ?>

@@ -101,6 +101,40 @@ body {
     color: #fff;
 }
 
+/* Dropdown  de conta*/
+.dropdown-menu {
+    background: var(--card-fundo);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.dropdown-item {
+    color: var(--branco);
+    border-radius: 8px;
+    font-size: .88rem;
+    padding: 8px 14px;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+    background: rgba(255, 255, 255, .07);
+    color: #fff;
+}
+
+.dropdown-item.text-danger {
+    color: #f87171 !important;
+}
+
+.dropdown-item.text-danger:hover {
+    background: rgba(239, 68, 68, .1);
+}
+
+.dropdown-divider {
+    border-color: var(--borda);
+    margin: 6px 0;
+}
+
 /* BOTÃO VOLTAR */
 .btn-voltar {
     position: fixed;

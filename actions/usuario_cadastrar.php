@@ -6,31 +6,33 @@
         $usuario->nome = strip_tags($_POST['nome']);
         $usuario->email = strip_tags($_POST['email']);
         $usuario->senha_hash = strip_tags($_POST['senha_hash']);
-        $usuario->data_nascimento = strip_tags($_POST['data_nascimento']);
-        $usuario->nivel_libras = strip_tags($_POST['nivel_libra']);
+        $usuario->nivel_libras = strip_tags($_POST['nivel_libras']);
 
         if(empty($usuario->nome)){
-            echo "O nome não foi informado";
+            header('Location: ../login.php?err=nome_vazio');
+            exit();
         }
         else if(empty($usuario->email)){
-            echo "O Email não foi informado";
+            header('Location: ../login.php?err=email_vazio');
+            exit();
         }
         else if(empty($usuario->senha_hash)){
-            echo "A senha não foi informado";
+            header('Location: ../login.php?err=senha_vazia');
+            exit();
         }
-        else if(empty($usuario->data_nascimento)){
-            echo "A Data de Nascimento não foi informado";
-        }
-        else if(empty($usuario->nivel_libra)){
-            echo "O seu Nivel não foi informado";
+        else if(empty($usuario->nivel_libras)){
+            header('Location: ../login.php?err=nivel_vazio');
+            exit();
         }
         else{
             if($usuario->Cadastrar() == 1){
-                header('Location: ../login.php');
+                header('Location: ../login.php?msg=cadastro_sucesso');
+                exit();
             }
             else{
                 // header('Location: ../html/login.html');
                 header('Location: ../cadastro.php');
+                exit();
             }
         }
     }
