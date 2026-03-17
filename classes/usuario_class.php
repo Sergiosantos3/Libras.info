@@ -55,5 +55,18 @@ class Usuario{
         return $comando->rowCount();
     }
 
+    public function Atualizar(){
+        $sql = "UPDATE usuarios SET nome = ?, email = ?, nivel_libras = ? WHERE id = ?";
+        $banco = Banco::conectar();
+        $comando = $banco->prepare($sql);
+        $resultado = $comando->execute([
+            $this->nome,
+            $this->email,
+            $this->nivel_libras,
+            $this->id
+        ]);
+        Banco::desconectar();
+    return $resultado ? 1 : 0; // retorna 1 se executou
+   }
+
 }
-?>

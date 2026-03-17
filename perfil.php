@@ -102,6 +102,7 @@ session_start();
             </div>
 
             <form action="./actions/usuario_atualizar.php" method="POST">
+                <input type="hidden" name="id" value="<?= $_SESSION['usuario']['id'] ?>">
                 <div class="row g-4">
                     <div class="col-md-6">
                         <div class="campo-grupo">

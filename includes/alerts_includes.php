@@ -4,6 +4,7 @@
 $msg = [
     "usuario_cadastrado" => "Usuário cadastrado com sucesso!",
     "senha_atualizada" => "Senha atualizada com sucesso!",
+    "usuario_atualizado" => "Dados do usuário atualizados com sucesso!",
 
 ];
 
@@ -22,7 +23,9 @@ $err = [
     "senha_atualizada" => "Senha atualizada com sucesso!",
     "nome_vazio" => "O nome não foi informado.",
     "sobrenome_vazio" => "O sobrenome não foi informado.",
-    "telefone_vazio" => "O telefone não foi informado."
+    "telefone_vazio" => "O telefone não foi informado.",
+    "erro_atualizar_usuario" => "Erro ao atualizar os dados do usuário. Tente novamente.",
+    "nivel_vazio" => "O nível de Libras não foi informado.",
     
 
 
