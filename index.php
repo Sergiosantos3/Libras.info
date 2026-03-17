@@ -81,7 +81,7 @@ session_start();
                         </a>
                         <a href="sobre-nos.php" class="btn btn-outline-light btn-lg">Saiba Mais</a>
                     </div>
-                    <div class="hero-stats">
+                    <!-- <div class="hero-stats">
                         <div class="stat-item">
                             <span class="stat-number">10K+</span>
                             <span class="stat-label">Alunos</span>
@@ -94,7 +94,7 @@ session_start();
                             <span class="stat-number">50+</span>
                             <span class="stat-label">Aulas</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-6 d-none d-lg-block">
                     <div class="hero-visual">

@@ -32,11 +32,11 @@ session_start();
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sinais">Sinais</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#alfabeto">Alfabeto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./sobre-nos.php">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#sinais">Sinais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#alfabeto">Alfabeto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?sobre">Sobre</a></li>
                 </ul>
                 <?php if (isset($_SESSION['usuario'])): ?>
                     <div class="dropdown">

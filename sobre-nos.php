@@ -34,11 +34,11 @@ session_start();
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sinais">Sinais</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#alfabeto">Alfabeto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./sobre-nos.php">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#sinais">Sinais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#alfabeto">Alfabeto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
                 </ul>
                 <?php if (isset($_SESSION['usuario'])): ?>
                     <div class="dropdown">
@@ -272,12 +272,12 @@ session_start();
                         <span class="brand-text">LIBRAS<span class="text-accent">.info</span></span>
                     </a>
                     <p class="footer-description">Conectando pessoas através da Língua Brasileira de Sinais.</p>
-                    <div class="social-links">
+                    <!-- <div class="social-links">
                         <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
                         <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <h5 class="footer-title">Aprender</h5>
