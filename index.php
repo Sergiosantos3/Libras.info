@@ -265,7 +265,7 @@ session_start();
                 <div class="col-md-6 col-lg-4">
                     <div class="course-card">
                         <div class="course-header bg-blue-gradient">
-                            <span class="course-emoji">🧑‍🏫</span>
+                            <span class="course-emoji"></span>
                             <span class="course-level">Iniciante</span>
                         </div>
                         <div class="course-body">
@@ -283,7 +283,7 @@ session_start();
                 <div class="col-md-6 col-lg-4">
                     <div class="course-card">
                         <div class="course-header bg-emerald-gradient">
-                            <span class="course-emoji">💬</span>
+                            <span class="course-emoji"></span>
                             <span class="course-level">Intermediário</span>
                         </div>
                         <div class="course-body">
@@ -299,7 +299,7 @@ session_start();
                 <div class="col-md-6 col-lg-4">
                     <div class="course-card">
                         <div class="course-header bg-amber-gradient">
-                            <span class="course-emoji">🎓</span>
+                            <span class="course-emoji"></span>
                             <span class="course-level">Avançado</span>
                         </div>
                         <div class="course-body">
