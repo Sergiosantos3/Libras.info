@@ -253,7 +253,7 @@ session_start();
             <div class="section-header-flex">
                 <div>
                     <span class="section-badge section-badge-primary">Cursos</span>
-                    <h2 class="section-title">Nossos Cursos</h2>
+                    <h2 class="section-title">Ensinamentos</h2>
                     <p class="section-description">Cursos estruturados para todos os níveis</p>
                 </div>
                 <!-- <a href="#" class="btn btn-outline-secondary d-none d-md-inline-flex">
